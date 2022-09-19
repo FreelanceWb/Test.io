@@ -111,14 +111,16 @@ section img {
 
 #back {
     z-index: 2;
+    top: 25px;
 }
 
-#under-back {
+/* #under-back {
     z-index: 1;
-}
+} */
 
 #lines {
     z-index: 2;
+    top: 25px;
 }
 
 #ball,
