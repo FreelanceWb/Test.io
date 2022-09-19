@@ -7,7 +7,6 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(45deg, #684471, rgb(79, 106, 180));
     overflow-x: hidden;
     max-height: fit-content;
 }
@@ -83,7 +82,7 @@ section {
     align-items: center;
 }
 
-section::before {
+/* section::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -91,7 +90,7 @@ section::before {
     height: 65px;
     background: linear-gradient(to top, #7866c4, transparent);
     z-index: 10;
-}
+} */
 
 section img {
     position: absolute;
@@ -102,11 +101,28 @@ section img {
     object-fit: cover;
 }
 
-#clouds {
+/* #clouds {
     z-index: 1;
 }
 
 #mountain {
+    z-index: 2;
+} */
+
+#back {
+    z-index: 2;
+}
+
+#under-back {
+    z-index: 1;
+}
+
+#lines {
+    z-index: 2;
+}
+
+#ball,
+#ball-2 {
     z-index: 2;
 }
 
@@ -136,68 +152,6 @@ section img {
     z-index: 11;
 }
 
-.sections-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.questions form {
-    width: 300px;
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: flex-end;
-}
-
-.questions label {
-    margin-right: auto;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.questions input {
-    width: 100%;
-    padding: 5px;
-    border: 3px solid #2b1055;
-    outline: none;
-    color: #864098;
-    border-radius: 5px;
-}
-
-.questions button {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    border: 2px solid #2b1055;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.total_info {
-    width: 300px;
-    text-align: center;
-}
-
-.total_info figcaption {
-    margin: 10px 0px;
-}
-
-.information {
-    width: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.information label {
-    text-transform: uppercase;
-    letter-spacing: 6px;
-
-}
 
 @media screen and (max-width:768px) {
     .burger {
