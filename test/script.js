@@ -1,15 +1,14 @@
-let header = document.getElementById("header");
-let stars = document.getElementById("stars");
-let mountain = document.getElementById("mountain");
-let clouds = document.getElementById("clouds");
-let canvas_one = document.getElementById("canvas_one");
+let back = document.getElementById("back");
+let ball = document.getElementById("ball");
+let ball_2 = document.getElementById("ball-2");
+let lines = document.getElementById("lines");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
-  header.style.top = value * 0.4 + "px";
-  clouds.style.top = value * 0.4 + "px";
-  mountain.style.top = value * 0.3 + "px";
-  canvas_one.style.top = value + "px";
+  back.style.top = value * 0.4 + "px";
+  ball.style.top = value * 0.4 + "px";
+  ball_2.style.top = value * 0.4 + "px";
+  lines.style.top = value * 0.3 + "px";
 });
 
 // $(".sec, .section").on("click", "a", function (event) {

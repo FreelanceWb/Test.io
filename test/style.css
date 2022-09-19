@@ -82,16 +82,6 @@ section {
     align-items: center;
 }
 
-/* section::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 65px;
-    background: linear-gradient(to top, #7866c4, transparent);
-    z-index: 10;
-} */
-
 section img {
     position: absolute;
     top: 0;
@@ -101,22 +91,10 @@ section img {
     object-fit: cover;
 }
 
-/* #clouds {
-    z-index: 1;
-}
-
-#mountain {
-    z-index: 2;
-} */
-
 #back {
     z-index: 2;
     top: 25px;
 }
-
-/* #under-back {
-    z-index: 1;
-} */
 
 #lines {
     z-index: 2;
