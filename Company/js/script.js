@@ -8,11 +8,13 @@ $(document).ready(function () {
 
   let navbar = document.getElementById("z-index-navbar");
   let devs = document.getElementById("devs");
+  const canvas = document.getElementById("canvas_one");
 
   window.addEventListener("scroll", function () {
     let value = window.scrollY;
     navbar.style.top = value * 0.2 + "px";
     devs.style.left = value * 0.2 + "px";
+    canvas.style.top = value + "px";
   });
 
   $("#page-links li a").on("click", function () {
