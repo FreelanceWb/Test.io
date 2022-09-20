@@ -5,73 +5,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@400;500;700;900&family=Raleway:wght@300;600;700;800&display=swap" rel="stylesheet">
+    <title>freelance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@400;500;700;900&family=Raleway:wght@300;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- иконки -->
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
 </head>
 
-<body id="body">
-    <header id="header">
-        <a href="" class="logo">Logo</a>
-        <div class="burger">
-            <span>---</span>
-            <span>---</span>
-            <span>---</span>
-        </div>
-        <ul>
-            <li><a href="#" class="active">HOME</a></li>
-            <li><a href="#">SKILLS</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">CONTACTS</a></li>
-        </ul>
-    </header>
-    <section class="section">
-        <img src="/img/БЭК-01 1.png" alt="">
-        <img src="" alt="" id="">
-        <img src="" alt="" id="">
-        <img src="" alt="" id="">
-
-    </section>
-
-    <main>
-         <div class="container">
-            <div class="skills">
-                <h1 class="skills-header">SKILLS</h1>
+<body>
+    <!-- меню бургер с логотипом, можно потом подправить позиционирование ссылок и логотипа -->
+    <nav class="navbar navbar-expand-sm position-absolute top-0 left-0 w-100 p-3" id="z-index-navbar">
+        <div class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch">
+            <div class="col-3 text-center ms-lg-1">
+                <a href="#" class="navbar-brand">
+                    <!-- здесь нужно поместить логотип компании -->
+                    <img src="images/logo.svg" alt="" width="100" height="auto" class="img-fluid">
+                    <!-- с размерами можно играться -->
+                </a>
             </div>
-        <div class="block-1">
-            <img class="col" src="/img/Figma.svg">
-            <h3>design</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <div class=""></div>
+                <!-- здесь сделать меню бургер 3 полосы-->
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark align-items-sm-center flex-sm-grow-0 me-lg-5 mt-lg-4"
+                tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Опції сайту</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!-- это наше меню, добавлен эффект подчёркивания при наведении на линк -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav" id="page-links">
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0 active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#">SKILLS</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#">services</a>
+                        </li>
+                        <li class="nav-item pe-4">
+                            <a class="nav-link p-0" href="#">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="block-1">
-            <img class="col" src="/img/Adobe Photoshop.svg">
-            <h3>design</h3>
-        </div> 
-        <div class="block-1">
-            <img class="col" src="/img/CSS3.svg">
-            <h3>design</h3>
-        </div>   
-        <div class="block-1">
-            <img class="col" src="/img/Html 5.svg">
-            <h3>design</h3>
-        </div>   
-        <div class="block-1">
-            <img class="col" src="/img/Python.svg">
-            <h3>design</h3>
-        </div>   
-        <div class="block-1">
-            <img class="col" src="/img/JavaScript.svg">
-            <h3>design</h3>
-        </div>   
-        <div class="block-1">
-            <img class="col" src="/img/Bootstrap.svg">
-            <h3>design</h3>
-        </div>   
-        <div class="block-1">
-            <img class="col" src="/img/Django.svg".svg">
-            <h3>design</h3>
+    </nav>
+    <!-- здесь будет надпись фулл стак девелоперс и боковая надпись тоже -->
+    <section class="section">
+        <img src="images/back.png" alt="" id="bg" class="img-fluid">
+        <div class="d-flex justify-content-center justify-content-lg-start w-100">
+            <h1 class="display-4 m-0 ms-lg-5 text-center text-lg-start">FULL STACK DEVELOPERS</h1>
         </div>
+        <div class="containe-fluid arrow-container">
+            <div class="m-auto mb-2">
+                <a href="#"><img src="images/arrow-down.png" alt="" class="img-fluid"></i></a>
+            </div>
+        </div>
+        <div class="position-absolute section-right-text d-none d-lg-block">
+            <p>
+                LET'S MAKE YOU A WEBSITE
+            </p>
+        </div>
+    </section>
+    </div>
+    <main class="pt-5">
+        <div class="containe-fluid">
+            <div class="continer-sm text-center" id="about-us">
+                <h2 class="">About us</h2>
+                <p class="ps-2 pe-2 m-auto">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit praesentium perferendis ad
+                    voluptatibus aut maiores consequatur pariatur expedita veniam accusamus inventore veritatis cumque
+                    reprehenderit, ex excepturi beatae reiciendis tempore non repudiandae aliquid. Provident, eum
+                    sapiente saepe maiores quis dolore non quae. Nisi, repellat at explicabo natus vitae esse impedit
+                    eos?
+                </p>
+            </div>
+        </div>
+        <div class="containe-fluid services mt-5">
+            <div class="container-sm" id="services">
+                <h2 class="">SKILLS</h2>
+                <div class="containe-fluid p-0 mt-4 d-flex flex-column gap-3 flex-sm-row flex-wrap">
+                    <div class="service-block col-12 col-md-4">
+                        <p class="m-0">FIGMA</p>
+                        <img src="images/figma.svg" alt="" class="img-fluid">
+                        <span class="">DESIgN</span>
+                    </div>
+                    <div class="service-block col-12">
+                        <p class="m-0">Photoshop</p>
+                        <img src="images/adobe-ph.svg" alt="" class="img-fluid">
+                        <span class="">DESIgN</span>
+                    </div>
+                    <div class="service-block col-12">
+                        <p class="m-0">css</p>
+                        <img src="images/css.svg" alt="" class="img-fluid">
+                        <span class="">STYLE</span>
+                    </div>
+                    <div class="service-block col-12">
+                        <p class="m-0">HTML</p>
+                        <img src="images/html.svg" alt="" class="img-fluid">
+                        <span class="">FRONT-end</span>
+                    </div>
+                    <div class="service-block col-12">
+                        <p class="m-0">python</p>
+                        <img src="images/python.svg" alt="" class="img-fluid">
+                        <span class="">SCRIPTS</span>
+                    </div>
+                    <div class="service-block col-12">
+                        <p class="m-0">java script</p>
+                        <img src="images/js.svg" alt="" class="img-fluid">
+                        <span class="">SCRIPTS</span>
+                    </div>
+                    <div class="service-block col-12">
+                        <p class="m-0">BOOTSTRAP</p>
+                        <img src="images/b5.svg" alt="" class="img-fluid">
+                        <span class="">FRAMEWORK</span>
+                    </div>
+                    <div class="service-block col-12">
+                        <p class="m-0">DJANGO</p>
+                        <img src="images/django.svg" alt="" class="img-fluid">
+                        <span class="">FRAMEWORK</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container-sm p-0"> -->
+
+            <!-- <div class="block-1">
+                    <img class="col" src="images/Figma.svg">
+                    <h3>design</h3>
+                </div>
+                <div class="block-1">
+                    <img class="col" src="images/Adobe Photoshop.svg">
+                    <h3>design</h3>
+                </div>
+                <div class="block-1">
+                    <img class="col" src="images/CSS3.svg">
+                    <h3>design</h3>
+                </div>
+                <div class="block-1">
+                    <img class="col" src="images/Html 5.svg">
+                    <h3>design</h3>
+                </div>
+                <div class="block-1">
+                    <img class="col" src="images/Python.svg">
+                    <h3>design</h3>
+                </div>
+                <div class="block-1">
+                    <img class="col" src="images/JavaScript.svg">
+                    <h3>design</h3>
+                </div>
+                <div class="block-1">
+                    <img class="col" src="images/Bootstrap.svg">
+                    <h3>design</h3>
+                </div>
+                <div class="block-1">
+                    <img class="col" src="images/Django.svg">
+                    <h3>design</h3>
+                </div> -->
+            <!-- </div> -->
     </main>
-    <script src="script.js"></script>
+
+    <!-- jQuery и js файлы -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,28 @@
+/* место для всех анимаций */
+
+@keyframes underline-move {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+@keyframes jumping-arrow {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -10px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0px, 10px);
+    }
+}
