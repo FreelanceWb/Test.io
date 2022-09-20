@@ -5,8 +5,8 @@
    --gray--p: #E6E6E6;
    --main--h2--color: #E5E5E5;
    --h2--before--color: #4E978E;
-   --service--border: #9E9D9D;
-   --service--span: rgba(255, 255, 255, 0.3);
+   --skill--border: #9E9D9D;
+   --skill--span: rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -39,7 +39,9 @@ body {
 }
 
 #page-links li a.active::after,
-#page-links li a:hover::after {
+#page-links li a:hover::after,
+#portfolio span.active::after,
+#portfolio span:hover::after {
    position: absolute;
    content: "";
    width: 100%;
@@ -50,7 +52,9 @@ body {
    bottom: 0;
 }
 
-#page-links li a:hover::after {
+#page-links li a:hover::after,
+#portfolio span:hover::after,
+.service-block a:hover::after {
    animation: underline-move 0.7s ease normal;
 }
 
@@ -61,6 +65,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: flex-end;
+   overflow: hidden;
 }
 
 .section>img {
@@ -68,7 +73,7 @@ body {
    top: 0;
    left: 0;
    width: 100%;
-   height: 100%;
+   height: 105%;
    object-fit: cover;
 }
 
@@ -96,6 +101,9 @@ body {
    text-transform: uppercase;
    writing-mode: vertical-lr;
    transform: rotate(180deg);
+}
+
+.section-right-text p {
    color: var(--section--colors);
    letter-spacing: 1px;
    font-weight: 700;
@@ -121,6 +129,7 @@ body {
 
 main {
    background-color: var(--main--color);
+   height: fit-content;
 }
 
 #about-us h2 {
@@ -133,10 +142,10 @@ main {
    font-weight: 500;
    line-height: 140%;
    color: var(--gray--p);
-   max-width: 700px;
+   max-width: 750px;
 }
 
-main :where(#services) h2 {
+main :where(#skills, #portfolio, #services) h2 {
    font-weight: 600;
    font-size: 20px;
    line-height: 24px;
@@ -145,7 +154,7 @@ main :where(#services) h2 {
    align-items: center;
 }
 
-main :where(#services) h2::before {
+main :where(#skills, #portfolio, #services) h2::before {
    content: "";
    flex: 0 0 30px;
    margin: 0px 10px 0px 0px;
@@ -153,12 +162,9 @@ main :where(#services) h2::before {
    height: 3px;
 }
 
-.services {
-   min-height: 100vh;
-}
-
+.skill-block,
 .service-block {
-   border: 1px solid var(--service--border);
+   border: 1px solid var(--skill--border);
    border-radius: 5px;
    position: relative;
    padding: 10px;
@@ -166,7 +172,7 @@ main :where(#services) h2::before {
    height: 150px;
 }
 
-.service-block p {
+.skill-block p {
    font-weight: 400;
    line-height: 24px;
    font-size: 20px;
@@ -174,18 +180,100 @@ main :where(#services) h2::before {
    width: fit-content;
 }
 
-.service-block img {
+.skill-block img {
    position: absolute;
    right: 5px;
    top: 5px;
 }
 
-.service-block span {
+.skill-block span {
    position: absolute;
    left: 10px;
    bottom: 10px;
-   color: var(--service--span);
+   color: var(--skill--span);
    font-weight: 400;
    font-size: 15px;
    line-height: 18px;
+}
+
+#portfolio span {
+   font-weight: 400;
+   font-size: calc(0.7rem + .2vw);
+   line-height: 14px;
+   text-align: center;
+   color: var(--main--h2--color);
+   position: relative;
+   padding: 0px 0px 3px 0px;
+   cursor: pointer;
+}
+
+#portfolio span:not(.active) {
+   opacity: 0.7;
+}
+
+#portfolio span.active::after,
+#portfolio span:hover::after {
+   background-color: var(--h2--before--color);
+}
+
+#services {
+   min-height: 100vh;
+}
+
+.service-block {
+   height: 250px;
+   color: var(--main--h2--color);
+   font-weight: 400;
+   text-transform: none;
+   cursor: pointer;
+   overflow: hidden;
+   position: relative;
+   transition: all 0.5s;
+}
+
+.service-block.active {
+   background-color: var(--h2--before--color);
+}
+
+.service-block span {
+   font-size: 20px;
+   line-height: 24px;
+}
+
+.service-block h3 {
+   font-size: calc(1rem + .2vw);
+   line-height: 140%;
+}
+
+.service-block p,
+.service-block a {
+   font-size: 15px;
+   line-height: 140%;
+   max-height: 105px;
+   overflow: hidden;
+}
+
+.service-block a {
+   text-decoration: none;
+   color: var(--main--h2--color);
+   position: absolute;
+   left: 10px;
+   bottom: 10px;
+   opacity: 1;
+}
+
+.service-block a::after,
+.service-block a:hover::after {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 1.5px;
+   border-radius: 2px;
+   background-color: #ffffff;
+   left: 0;
+   bottom: 0;
+}
+
+.service-block:not(.active) a {
+   transform: translate(0px, 30px);
 }

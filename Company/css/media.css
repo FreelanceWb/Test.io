@@ -1,9 +1,11 @@
 @media (min-width: 576px) {
+
+    .skill-block,
     .service-block {
         width: calc(50% - 1rem);
     }
 
-    .service-block img {
+    .skill-block img {
         position: absolute;
         right: 10px;
         top: 10px;
@@ -11,8 +13,13 @@
 }
 
 @media (min-width: 768px) {
-    .service-block {
+    .skill-block {
         width: calc(33.33333333% - 1rem);
     }
+}
 
+@media (min-width: 992px) {
+    .service-block {
+        width: calc(25% - 1rem);
+    }
 }
