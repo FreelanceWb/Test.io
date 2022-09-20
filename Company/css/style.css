@@ -24,6 +24,8 @@ body {
 
 #z-index-navbar {
    z-index: 2;
+   top: 0;
+   left: 0;
 }
 
 #page-links {
@@ -78,6 +80,7 @@ body {
    position: absolute;
    top: 75%;
    z-index: 1;
+   left: 0;
 }
 
 .section>div:first-of-type h1 {
@@ -186,47 +189,3 @@ main :where(#services) h2::before {
    font-size: 15px;
    line-height: 18px;
 }
-
-/* .col {
-   display: table-row-group;
-   display: flex;
-}
-
-.block-1 h3 {
-   color: rgba(255, 255, 255, 0.3);
-}
-
-.block-1 {
-   margin-top: 20px;
-   margin-right: 50px;
-   display: table-row-group;
-   border: 1px solid #9E9D9D;
-   border-radius: 5px;
-   display: inline-block;
-}
-
-.portfolio-cards-wrapper {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
-
-.card {
-   margin-bottom: 30px;
-   max-width: 540px;
-   background-color: white;
-   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
-   transition: transform 0.2s ease-in;
-}
-
-.card:hover {
-   transform: translateY(-15px);
-}
-
-.card-link {
-   display: block;
-   padding: 20px;
-   color: #000000;
-   text-decoration: none;
-   transition: 0.2s ease-in;
-} */
