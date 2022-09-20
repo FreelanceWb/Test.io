@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <canvas id="canvas_one"></canvas>
     <!-- меню бургер с логотипом, можно потом подправить позиционирование ссылок и логотипа -->
     <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="z-index-navbar">
         <div class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch">
@@ -70,8 +71,8 @@
         <div class="d-flex justify-content-center justify-content-lg-start" id="devs">
             <h1 class="display-4 m-0 ms-lg-5 text-center text-lg-start">FULL STACK DEVELOPERS</h1>
         </div>
-        <div class="containe-fluid arrow-container">
-            <div class="m-auto mb-2">
+        <div class="container-fluid arrow-container">
+            <div class="d-flex justify-content-center mb-2">
                 <a href="#main"><img src="images/arrow-down.png" alt="" class="img-fluid"></i></a>
             </div>
         </div>
@@ -83,7 +84,7 @@
     </section>
     </div>
     <main class="pt-5" id="main">
-        <div class="containe-fluid">
+        <div class="container-fluid">
             <div class="continer-sm text-center" id="about-us">
                 <h2 class="">About us</h2>
                 <p class="ps-2 pe-2 m-auto">
@@ -95,10 +96,10 @@
                 </p>
             </div>
         </div>
-        <div class="containe-fluid mt-5">
+        <div class="container-fluid mt-5">
             <div class="container-sm" id="skills">
                 <h2 class="">SKILLS</h2>
-                <div class="containe-fluid p-0 mt-4 d-flex flex-column gap-3 gap-lg-4 flex-sm-row flex-wrap">
+                <div class="container-fluid p-0 mt-4 d-flex flex-column gap-3 gap-lg-4 flex-sm-row flex-wrap">
                     <div class="skill-block col-12 col-md-4">
                         <p class="m-0">FIGMA</p>
                         <img src="images/figma.svg" alt="" class="img-fluid">
@@ -142,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <div class="containe-fluid mt-5">
+        <div class="container-fluid mt-5">
             <div class="container-sm" id="portfolio">
                 <h2 class="">PORTFOLIO</h2>
                 <div
@@ -151,15 +152,15 @@
                     <span class="">LENDING PAGE</span>
                     <span class="">WEBSITE DESIGN</span>
                 </div>
-                <div class="containe-fluid p-0 mt-3 col-sm-3">
+                <div class="container-fluid p-0 mt-3 col-sm-3">
                     <img src="images/portfolio.png" alt="" class="img-fluid w-100">
                 </div>
             </div>
         </div>
-        <div class="containe-fluid mt-5">
+        <div class="container-fluid mt-5">
             <div class="container-sm" id="services">
                 <h2 class="">SERVICES</h2>
-                <div class="containe-fluid p-0 mt-3 d-flex flex-wrap gap-3 gap-lg-1 justify-content-lg-between">
+                <div class="container-fluid p-0 mt-3 d-flex flex-wrap gap-3 gap-lg-1 justify-content-lg-between">
                     <div class="service-block col-12 col-md-4 d-flex flex-column gap-2">
                         <span>01</span>
                         <h3>Web design and
@@ -212,7 +213,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/fluid.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
