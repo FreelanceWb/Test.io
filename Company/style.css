@@ -34,6 +34,23 @@ body {
    text-decoration: none;
    padding: 6px 15px;
    color: #fff;
+<<<<<<< HEAD
+=======
+   z-index: 13;
+}
+
+
+.burger {
+   display: none;
+}
+
+header ul li a:hover,
+header ul li a.active,
+.back-top {
+   background: #fff;
+   color: #2b1055;
+   border-radius: 20px;
+>>>>>>> main
 }
 
 canvas {
@@ -64,6 +81,116 @@ section img {
    object-fit: cover;
 }
 
+<<<<<<< HEAD
 #blue-bg {
    z-index: 1;
+=======
+.container {
+   background-color:#3B3C3E;
+   display: flex;
+   justify-content: center;
+}
+
+.col {
+   display: table-row-group;
+   display: flex;
+}
+
+.block-1 h3 {
+   color: rgba(255, 255, 255, 0.3);
+}
+
+.block-1 {
+   margin-top: 20px;
+   margin-right: 50px;
+   display: table-row-group;
+   border: 1px solid #9E9D9D;
+   border-radius: 5px
+   display: inline-block;
+}
+
+.portfolio-cards-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+   margin-bottom: 30px;
+   max-width: 540px;
+   background-color: white;
+   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+   transition: transform 0.2s ease-in;
+}
+
+.card:hover {
+   transform: translateY(-15px);
+}
+
+.card-link {
+   display: block;
+   padding: 20px;
+   color: #000000;
+   text-decoration: none;
+   transition: 0.2s ease-in;
+}
+
+#back {
+   z-index: 2;
+   top: 25px;
+}
+
+#lines {
+   z-index: 2;
+   top: 25px;
+}
+
+#ball,
+#ball-2 {
+   z-index: 2;
+}
+
+.sec {
+   position: relative;
+   padding: 50px;
+   background: #7866c4;
+   z-index: 11;
+}
+
+.sec h2 {
+   font-size: 3.5em;
+   margin: 0px 0px 10px 0px;
+   color: #d7ccd9;
+}
+
+.sec p {
+   font-size: 1.2em;
+   color: #d7ccd9;
+}
+
+.sec-2 {
+   position: relative;
+   padding: 50px;
+   background: #864098;
+   min-height: 100vh;
+   z-index: 11;
+}
+
+@media screen and (max-width:768px) {
+   .burger {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .burger span {
+       line-height: 8px;
+       font-size: 18px;
+       font-weight: 900;
+   }
+
+   header ul {
+       display: none;
+   }
+
+>>>>>>> main
 }
