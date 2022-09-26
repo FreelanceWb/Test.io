@@ -408,6 +408,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
    font-size: calc(1rem + 0.7vw);
    text-transform: uppercase;
    opacity: .8;
+   border: none;
 }
 
 .btn:hover {
