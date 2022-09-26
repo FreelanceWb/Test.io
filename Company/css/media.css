@@ -1,7 +1,16 @@
+@media (max-width: 576px) {
+
+    .contact-block.col-6 {
+        width: calc(50% - .5rem);
+    }
+}
+
 @media (min-width: 576px) {
 
     .skill-block,
-    .service-block {
+    .service-block,
+    .label,
+    .contact-block {
         width: calc(50% - 1rem);
     }
 
@@ -21,5 +30,9 @@
 @media (min-width: 992px) {
     .service-block {
         width: calc(25% - 1rem);
+    }
+
+    .contact-block {
+        width: calc(100%);
     }
 }
