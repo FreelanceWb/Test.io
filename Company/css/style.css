@@ -267,6 +267,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
    z-index: 2;
    text-transform: uppercase;
    font-weight: 400;
+   height: 50px;
 }
 
 .service-block p,
