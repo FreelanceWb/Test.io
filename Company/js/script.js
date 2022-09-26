@@ -14,7 +14,7 @@ $(document).ready(function () {
     let value = window.scrollY;
     navbar.style.top = value * 0.2 + "px";
     devs.style.left = value * 0.2 + "px";
-    // canvas.style.top = value + "px";
+    canvas.style.top = value + "px";
   });
 
   $("#page-links li a").on("click", function () {

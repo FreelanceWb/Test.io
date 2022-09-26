@@ -378,7 +378,8 @@ footer {
    color: #ffffff;
    font-weight: 400;
    font-size: calc(1rem + .5vw);
-   line-height: 20px
+   line-height: 20px;
+   z-index: 2;
 }
 
 .footer-right {
