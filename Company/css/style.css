@@ -339,6 +339,7 @@ main :where(#skills, #portfolio, #services, #contact) h2::before {
 .label,
 .btn {
    border-radius: 7px;
+   z-index: 2;
 }
 
 .btn {
