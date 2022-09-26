@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <canvas id="canvas_one"></canvas>
+    <!-- <canvas id="canvas_one"></canvas> -->
     <!-- меню бургер с логотипом, можно потом подправить позиционирование ссылок и логотипа -->
     <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="z-index-navbar">
         <div class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch">
@@ -58,7 +58,7 @@
                             <a class="nav-link p-0" href="#services">services</a>
                         </li>
                         <li class="nav-item pe-4">
-                            <a class="nav-link p-0" href="#">CONTACTS</a>
+                            <a class="nav-link p-0" href="#contacts">CONTACTS</a>
                         </li>
                     </ul>
                 </div>
@@ -97,6 +97,7 @@
             </div>
         </div>
         <div class="container-fluid mt-5">
+            <div class="pt-5 mb-5"></div>
             <div class="container-sm" id="skills">
                 <h2 class="">SKILLS</h2>
                 <div class="container-fluid p-0 mt-4 d-flex flex-column gap-3 gap-lg-4 flex-sm-row flex-wrap">
@@ -144,6 +145,7 @@
             </div>
         </div>
         <div class="container-fluid mt-5">
+            <div class="pt-5 mb-5"></div>
             <div class="container-sm" id="portfolio">
                 <h2 class="">PORTFOLIO</h2>
                 <div
@@ -152,12 +154,23 @@
                     <span class="">LENDING PAGE</span>
                     <span class="">WEBSITE DESIGN</span>
                 </div>
-                <div class="container-fluid p-0 mt-3 col-sm-3">
-                    <img src="images/portfolio.png" alt="" class="img-fluid w-100">
+                <div class="container-fluid p-0 mt-3 d-flex flex-wrap">
+                    <div class="col-12 col-sm-7 col-lg-8"><img src="images/portfolio-1.png" alt=""
+                            class="img-fluid w-100 h-100 p-2">
+                    </div>
+                    <div class="d-none d-sm-block col-sm-5 col-lg-4"><img src="images/portfolio-2.svg" alt=""
+                            class="img-fluid w-100 h-100 p-2"></div>
+                    <div class="d-none d-sm-block col-sm-5 col-lg-4"><img src="images/portfolio-3.png" alt=""
+                            class="img-fluid w-100 h-100 p-2"></div>
+                    <div class="d-none d-sm-block col-sm-7 col-lg-4"><img src="images/portfolio-4.svg" alt=""
+                            class="img-fluid w-100 h-100 p-2"></div>
+                    <div class="d-none d-lg-block col-lg-4"><img src="images/portfolio-3.svg" alt=""
+                            class="img-fluid w-100 h-100 p-2"></div>
                 </div>
             </div>
         </div>
         <div class="container-fluid mt-5">
+            <div class="pt-5 mb-5"></div>
             <div class="container-sm" id="services">
                 <h2 class="">SERVICES</h2>
                 <div class="container-fluid p-0 mt-3 d-flex flex-wrap gap-3 gap-lg-1 justify-content-lg-between">
@@ -170,7 +183,7 @@
                             well as its programming</p>
                         <a href="#">Order a service</a>
                     </div>
-                    <div class="service-block col-12 col-md-4 d-flex flex-column gap-2 active">
+                    <div class="service-block col-12 col-md-4 d-flex flex-column gap-2">
                         <span>02</span>
                         <h3>UI/UX DESIGN</h3>
                         <p>Thinking over the user structure
@@ -200,7 +213,8 @@
             </div>
         </div>
         <div class="container-fluid mt-5 ">
-            <div class="container-sm" id="contact">
+            <div class="pt-5 mb-5"></div>
+            <div class="container-sm" id="contacts">
                 <h2 class="">CONTACT WITH US</h2>
                 <div class="d-flex mt-4 flex-wrap gap-sm-5 justify-content-lg-between align-items-lg-start">
                     <!-- contact-us -->
@@ -234,7 +248,6 @@
                     </form>
                 </div>
             </div>
-
     </main>
     <footer>
         <div class="container-fluid">
@@ -242,15 +255,14 @@
                 <hr class="hr-form m-0">
                 <img src="./images/logo.svg" class="img-fluid footer-logo">
                 <div
-                    class="pt-3 col-8 text-center d-flex flex-column m-auto flex-wrap gap-3 footer-text col-sm-10 pt-sm-5 m-sm-0 ms-sm-auto align-items-center flex-sm-row">
-                    <a href="#"><span>HOME</span></a>
-                    <a href="#"><span>SKILLS</span></a>
-                    <a href="#"><span>PORTFOLIO</span></a>
-                    <a href="#"><span>SERVICES</span></a>
-                    <a href="#" class="d-none d-lg-inline"><span>CONTACTS</span></a>
+                    class="pt-3 col-8 text-center d-flex flex-column m-auto flex-wrap gap-3 footer-text col-sm-10 col-lg-9 pt-sm-5 m-sm-0 ms-sm-auto align-items-center flex-sm-row">
+                    <a href="#main"><span>HOME</span></a>
+                    <a href="#skills"><span>SKILLS</span></a>
+                    <a href="#portfolio"><span>PORTFOLIO</span></a>
+                    <a href="#services"><span>SERVICES</span></a>
+                    <a href="#contacts" class="d-none d-lg-inline"><span>CONTACTS</span></a>
                     <div class="footer-right text-center ms-lg-auto"> @2022 All reserved</div>
                 </div>
-
             </div>
         </div>
     </footer>
