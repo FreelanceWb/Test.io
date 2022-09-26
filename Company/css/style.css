@@ -58,7 +58,7 @@ canvas {
    border-radius: 2px;
    background-color: var(--links--underline);
    left: 0;
-   bottom: 0;
+   bottom: -1px;
 }
 
 #page-links li a:hover::after,
@@ -215,8 +215,8 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
 }
 
 #portfolio span {
-   font-weight: 400;
-   font-size: calc(0.7rem + .2vw);
+   font-weight: 300;
+   font-size: calc(0.9rem + .2vw);
    line-height: 14px;
    text-align: center;
    color: var(--main--h2--color);
