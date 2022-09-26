@@ -138,7 +138,6 @@ canvas {
 
 main {
    background-color: var(--main--color);
-   height: fit-content;
 }
 
 #about-us h2 {
@@ -158,7 +157,7 @@ main {
    z-index: 2;
 }
 
-main :where(#skills, #portfolio, #services) h2 {
+main :where(#skills, #portfolio, #services, #contact) h2 {
    font-weight: 600;
    font-size: 20px;
    line-height: 24px;
@@ -167,7 +166,7 @@ main :where(#skills, #portfolio, #services) h2 {
    align-items: center;
 }
 
-main :where(#skills, #portfolio, #services) h2::before {
+main :where(#skills, #portfolio, #services, #contact) h2::before {
    content: "";
    flex: 0 0 30px;
    margin: 0px 10px 0px 0px;
@@ -234,10 +233,6 @@ main :where(#skills, #portfolio, #services) h2::before {
    background-color: var(--h2--before--color);
 }
 
-#services {
-   min-height: 100vh;
-}
-
 .service-block {
    height: 250px;
    color: var(--main--h2--color);
@@ -298,4 +293,94 @@ main :where(#skills, #portfolio, #services) h2::before {
 
 .service-block:not(.active) a {
    transform: translate(0px, 30px);
+}
+
+.icons {
+   width: 45px;
+   padding-bottom: 15px;
+}
+
+.contact-block {
+   padding: 20px 10px;
+   text-align: center;
+   height: 148px;
+   color: #FFFFFF;
+   background: #2B2B2D;
+   box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.25);
+   border-radius: 7px;
+   line-break: anywhere;
+}
+
+.label {
+   color: #5B5B5B;
+   outline: none;
+}
+
+.input {
+   border: none;
+   background: #2B2B2D;
+   box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+   width: 100%;
+   padding: 20px;
+   text-transform: uppercase;
+}
+
+.textarea {
+   padding: 20px;
+   border: none;
+   width: 100%;
+   height: 234px;
+   background: #2B2B2D;
+}
+
+.info,
+.textarea,
+.input,
+.label,
+.btn {
+   border-radius: 7px;
+}
+
+.btn {
+   height: 66px;
+   color: #FFFFFF;
+   background: #4E978E;
+   font-size: calc(1rem + 0.7vw);
+   text-transform: uppercase;
+}
+
+.hr-form {
+   height: 4px;
+   background-color: #131313;
+   width: 100%;
+   opacity: .7;
+}
+
+footer {
+   background-color: var(--main--color);
+   height: 220px;
+}
+
+.footer {
+   position: relative;
+}
+
+.footer-logo {
+   position: absolute;
+   top: 0px;
+   left: 10px;
+   width: calc(85px + 3.5vw);
+   height: auto;
+}
+
+.footer-text a {
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: 400;
+   font-size: calc(1rem + .5vw);
+   line-height: 20px
+}
+
+.footer-right {
+   color: #9C9C9C;
 }

@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <canvas id="canvas_one"></canvas>
+    <!-- <canvas id="canvas_one"></canvas> -->
     <!-- меню бургер с логотипом, можно потом подправить позиционирование ссылок и логотипа -->
     <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="z-index-navbar">
         <div class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch">
@@ -83,7 +83,7 @@
         </div>
     </section>
     </div>
-    <main class="pt-5" id="main">
+    <main class="pt-5 pb-4" id="main">
         <div class="container-fluid">
             <div class="continer-sm text-center" id="about-us">
                 <h2 class="">About us</h2>
@@ -199,7 +199,61 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid mt-5 ">
+            <div class="container-sm" id="contact">
+                <h2 class="">CONTACT WITH US</h2>
+                <div class="d-flex mt-4 flex-wrap gap-sm-5 justify-content-lg-between align-items-lg-start">
+                    <!-- contact-us -->
+                    <div class="col-12 d-flex justify-content-between flex-wrap flex-sm-row-reverse col-lg-4 gap-lg-3">
+                        <div class="contact-block mb-4 col-6">
+                            <img class="icons" src="./images/Phone.svg">
+                            <p>+380 950 237 867</p>
+                        </div>
+                        <div class="contact-block mb-4 col-6">
+                            <img class="icons" src="./images/Mail.svg">
+                            <p>freelancewb2022@gmail.com</p>
+                        </div>
+                    </div>
+                    <form class="col-12 d-flex flex-column gap-3 col-lg-7">
+                        <div class="info col-12 d-flex justify-content-between flex-wrap gap-3">
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="Your Name">
+                            </label>
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="PHONE NUMBER">
+                            </label>
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="EMAIL ADRESS">
+                            </label>
+                            <label for="name" class="label col-12">
+                                <input class="input" id="name" type="text" name="name" placeholder="SUBJECT">
+                            </label>
+                        </div>
+                        <textarea class="textarea" placeholder="WHAT DO YOU WANT?"></textarea>
+                        <button class="btn mt-2 mb-5 col-sm-4 ms-sm-auto m-lg-0 col-lg-5">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+
     </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="container-sm pb-3 footer">
+                <hr class="hr-form m-0">
+                <img src="./images/logo.svg" class="img-fluid footer-logo">
+                <div
+                    class="pt-3 col-8 text-center d-flex flex-column m-auto flex-wrap gap-3 footer-text col-sm-10 pt-sm-5 m-sm-0 ms-sm-auto align-items-center flex-sm-row">
+                    <a href="#"><span>HOME</span></a>
+                    <a href="#"><span>SKILLS</span></a>
+                    <a href="#"><span>PORTFOLIO</span></a>
+                    <a href="#"><span>SERVICES</span></a>
+                    <a href="#" class="d-none d-lg-inline"><span>CONTACTS</span></a>
+                    <div class="footer-right text-center ms-lg-auto"> @2022 All reserved</div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery и js файлы -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
