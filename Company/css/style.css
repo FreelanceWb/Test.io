@@ -262,9 +262,10 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
 }
 
 .service-block h3 {
-   font-size: calc(1rem + .2vw);
-   line-height: 140%;
+   font-size: calc(1rem + .6vw);
+   line-height: 120%;
    z-index: 2;
+   text-transform: uppercase;
 }
 
 .service-block p,
@@ -281,7 +282,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
    color: var(--main--h2--color);
    position: absolute;
    left: 10px;
-   bottom: 10px;
+   bottom: 20px;
    opacity: 1;
 }
 
@@ -298,7 +299,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
 }
 
 .service-block:not(.active) a {
-   transform: translate(0px, 30px);
+   transform: translate(0px, 40px);
 }
 
 .service-block:hover a {
