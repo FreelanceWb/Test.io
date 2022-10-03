@@ -7,6 +7,12 @@ $(document).ready(function () {
       let id = $(this).attr("href");
       let top = $(id).offset().top;
       $("body,html").animate({ scrollTop: top }, 1500);
+      document.querySelector(".hamRotate").click();
+      // document.querySelector(".offcanvas").classList.toggle("show");
+      // let fades = document.querySelectorAll(".offcanvas-backdrop");
+      // fades.forEach((fade) => {
+      //   fade.classList.toggle("show");
+      // });
     }
   );
 
@@ -17,7 +23,7 @@ $(document).ready(function () {
     let value = window.scrollY;
     navbar.style.top = value * 0.2 + "px";
     devs.style.left = value * 0.2 + "px";
-    canvas.style.top = value * 0.9999999 + "px";
+    canvas.style.top = value * 0.9 + "px";
   });
 
   $("#page-links li a").on("click", function () {

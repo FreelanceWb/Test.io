@@ -3,6 +3,60 @@
     .contact-block.col-6 {
         width: calc(50% - .5rem);
     }
+
+    .offcanvas {
+        background: linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)), url('../images/back.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .offcanvas-body {
+        padding: 25% 0px 0px 0px;
+    }
+
+    #page-links {
+        align-items: center;
+        gap: 15px;
+    }
+
+    #page-links li a {
+        color: var(--section--colors);
+        list-style: none;
+        position: relative;
+        font-size: calc(2rem + 0.5vw);
+        font-weight: 300;
+    }
+
+    .phone_and_mail {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .phone_and_mail a {
+        color: var(--section--colors);
+        text-decoration: none;
+    }
+
+    #page-links li a.active::after,
+    #page-links li a:hover::after {
+        position: relative;
+        content: "";
+    }
+
+    .logo {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        z-index: 1050;
+    }
+
+    .hamRotate.active {
+        z-index: 1050;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
 }
 
 @media (min-width: 576px) {
