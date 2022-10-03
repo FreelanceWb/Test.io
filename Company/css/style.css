@@ -73,8 +73,12 @@ canvas {
    stroke-dashoffset: -138px;
 }
 
+.navbar-toggler {
+   outline: none;
+}
+
 #z-index-navbar {
-   z-index: 2;
+   z-index: 5;
    top: 0;
    left: 0;
 }
