@@ -8,6 +8,7 @@
         background: linear-gradient(rgba(30, 30, 30, 0.6), rgba(30, 30, 30, 0.6)), url('../images/back.png');
         background-repeat: no-repeat;
         background-size: cover;
+        transition: all 0.8s;
     }
 
     .offcanvas-body {
