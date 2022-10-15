@@ -1,11 +1,11 @@
 :root {
    --links--underline: #88BAB1;
    --section--colors: #ebe5e5;
-   --main--color: #3b3c3e;
+   --main--color: #0F0F0F;
    --gray--p: #E6E6E6;
    --main--h2--color: #E5E5E5;
-   --h2--before--color: #4E978E;
-   --skill--border: #9E9D9D;
+   --h2--before--color: #2B7A0B;
+   --skill--border: #2C2C2C;
    --skill--span: rgba(255, 255, 255, 0.3);
 }
 
@@ -105,7 +105,7 @@ canvas {
    border-radius: 2px;
    background-color: var(--links--underline);
    left: 0;
-   bottom: -1px;
+   bottom: -3px;
 }
 
 #page-links li a:hover::after,
@@ -205,26 +205,20 @@ main {
 }
 
 main :where(#skills, #portfolio, #services, #contacts) h2 {
-   font-weight: 600;
+   font-weight: 500;
    font-size: 28px;
    line-height: 24px;
    color: var(--main--h2--color);
    display: flex;
    align-items: center;
-   margin: 0px 0px 40px 0px
-}
-
-main :where(#skills, #portfolio, #services, #contacts) h2::before {
-   content: "";
-   flex: 0 0 30px;
-   margin: 0px 10px 0px 0px;
-   background-color: var(--h2--before--color);
-   height: 3px;
+   justify-content: center;
+   margin: 0px 0px 40px 0px;
+   text-transform: capitalize;
 }
 
 .skill-block,
 .service-block {
-   border: 1px solid var(--skill--border);
+   border: 2px solid var(--skill--border);
    border-radius: 5px;
    position: relative;
    padding: 10px;
@@ -261,6 +255,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
    z-index: 2;
 }
 
+
 #portfolio span {
    font-weight: 300;
    font-size: calc(0.9rem + .2vw);
@@ -283,7 +278,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
 }
 
 .service-block {
-   height: 325px;
+   height: 300px;
    color: var(--main--h2--color);
    font-weight: 400;
    text-transform: none;
@@ -292,6 +287,13 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
    position: relative;
    transition: all 0.5s;
    z-index: 2;
+   text-align: center;
+   padding: 25px;
+}
+
+.service-block img {
+   width: 65px;
+   height: auto;
 }
 
 .service-block:hover {
@@ -302,31 +304,30 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
    background-color: var(--h2--before--color);
 }
 
-.service-block span {
-   font-size: 20px;
-   line-height: 24px;
-   z-index: 2;
-}
-
 .service-block h3 {
    font-size: calc(1rem + .6vw);
    line-height: 120%;
    z-index: 2;
-   text-transform: uppercase;
-   font-weight: 400;
-   height: 50px;
+   text-transform: capitalize;
+   font-weight: 600;
+   letter-spacing: 1px;
 }
 
-.service-block p,
-.service-block a {
+.service-block p {
    font-size: 15px;
    line-height: 140%;
    max-height: 105px;
    overflow: hidden;
    z-index: 2;
+   color: #A8A8A8;
+   max-width: 275px;
 }
 
-.service-block a {
+.service-block.active p{
+   color: var(--section--colors);
+}
+
+/* .service-block a {
    text-decoration: none;
    color: var(--main--h2--color);
    position: absolute;
@@ -353,7 +354,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
 
 .service-block:hover a {
    transform: translate(0px, 0px);
-}
+} */
 
 .icons {
    width: 45px;
@@ -372,17 +373,17 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
 }
 
 .label {
-   color: #5B5B5B;
+   border: 2px solid var(--skill--border);
    outline: none;
 }
 
 .input {
    border: none;
-   background: #2B2B2D;
+   background: var(--main--color);
    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
    width: 100%;
    padding: 20px;
-   text-transform: uppercase;
+   text-transform: capitalize;
    color: #ffffff;
 }
 
@@ -391,8 +392,23 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
    border: none;
    width: 100%;
    height: 234px;
-   background: #2B2B2D;
+   background: var(--main--color);
+   border: 2px solid var(--skill--border);
    color: #ffffff;
+   text-transform: capitalize;
+}
+
+.privacy {
+   color: var(--section--colors);
+}
+
+.privacy a {
+   text-decoration: none;
+   color: var(--h2--before--color)
+}
+
+.privacy a:hover {
+   text-decoration: underline;
 }
 
 .contact-block,
@@ -407,20 +423,13 @@ main :where(#skills, #portfolio, #services, #contacts) h2::before {
 }
 
 .btn {
-   height: 66px;
+   height: 60px;
    color: #FFFFFF;
-   background: #4E978E;
+   font-weight: 400;
+   background: var(--h2--before--color);
    font-size: calc(1rem + 0.7vw);
    text-transform: uppercase;
-   opacity: .8;
    border: none;
-}
-
-.btn:hover {
-   background: #4E978E;
-   opacity: 1;
-   color: white;
-   box-shadow: -1px -1px -1px -1px;
 }
 
 .hr-form {
