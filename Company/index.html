@@ -31,7 +31,7 @@
             <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                 <!-- здесь сделать меню бургер 3 полосы-->
-                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="70"
                     onclick="this.classList.toggle('active')">
                     <path class="line top"
                         d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
@@ -71,22 +71,26 @@
         </div>
     </nav>
     <!-- здесь будет надпись фулл стак девелоперс и боковая надпись тоже -->
-    <section class="section">
-        <img src="images/back.png" alt="" id="bg" class="img-fluid">
-        <div class="d-flex justify-content-center justify-content-lg-start" id="devs">
-            <h1 class="display-4 m-0 ms-lg-5 text-center text-lg-start">FULL STACK DEVELOPERS</h1>
-        </div>
-        <div class="container-fluid arrow-container">
-            <div class="d-flex justify-content-center mb-2">
-                <a href="#main"><img src="images/arrow-down.png" alt="" class="img-fluid"></i></a>
+    <div class="wrapper">
+		<div class="content">
+			<div class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<div class="layers__caption">FULL STACK</div>
+						<div class="layers__title">DEVELOPERS</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(images/nature.jpg);"></div>
+					<div class="layer layers__middle" style="background-image: url(images/up-layer.png);"></div>
+					<div class="layer layers__front" style="background-image: url(images/middle-layer.png);"></div>
+					<div class="layer layers__front" style="background-image: url(images/down-layer.png);"></div>
+				</div>
+            </div>
+            <div class="position-absolute section-right-text d-none d-lg-block" id="section-right-text">
+                <p>
+                    LET'S MAKE YOU A WEBSITE
+                </p>
             </div>
         </div>
-        <div class="position-absolute section-right-text d-none d-lg-block" id="section-right-text">
-            <p>
-                LET'S MAKE YOU A WEBSITE
-            </p>
-        </div>
-    </section>
     </div>
     <main class="pt-5 pb-4" id="main">
         <div class="container-fluid">
@@ -229,6 +233,12 @@
                         <div class="d-flex align-items-center privacy gap-2">
                             <input type="checkbox" name="" id=""><p class="m-0">I agree with the <a href=""><span>Privary Policy</span></a></p></div>
                         <button class="btn mt-2 mb-5 col-sm-4 ms-sm-auto m-lg-0 col-lg-5">SEND MESSAGE</button>
+                        <div class="col-12 d-flex flex-column contact-info">
+                            <div class="col-6 d-flex flex-column"><span>Phone</span>
+                            <p>+380 95 02 37 867</p></div>
+                            <div class="col-6 d-flex flex-column"><span>Email</span>
+                            <p>freelancewb2022@gmail.com</p></div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -262,9 +272,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
-    <script src="./js/fluid.min.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/fluid.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
