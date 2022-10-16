@@ -8,7 +8,7 @@
 // myFluid.PARAMS.emitter_size = 0.5;
 
 window.addEventListener('scroll', e => {
-	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`) // Update method
+	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY *0.8}px`) // Update method
 })
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 ScrollSmoother.create({

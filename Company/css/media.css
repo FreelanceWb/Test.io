@@ -64,10 +64,10 @@
 
     .skill-block,
     .service-block,
-    .label,
-    .contact-block {
-        width: calc(50% - 1rem);
+    .label {
+        width: calc(50% - .5rem);
     }
+
 
     .skill-block img {
         position: absolute;
@@ -85,17 +85,29 @@
     .skill-block {
         width: calc(33.33333333% - 1rem);
     }
-    .skill-block img {
-        width: auto;
+}
+
+@media (max-width: 992px) {
+    .textarea {
+        height: 250px;
     }
 }
+
 
 @media (min-width: 992px) {
     .service-block {
         width: calc(25% - 0.5rem);
     }
 
-    .contact-block {
-        width: calc(100%);
+    .skill-block img {
+        width: auto;
+    }
+
+    .label {
+        width: 100%;
+    }
+
+    .btn {
+        margin-right: 8.33333%;
     }
 }

@@ -7,6 +7,7 @@
    --h2--before--color: #2B7A0B;
    --skill--border: #2C2C2C;
    --skill--span: rgba(255, 255, 255, 0.3);
+   --contacts--p: #ACACAC;
 }
 
 * {
@@ -369,21 +370,37 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
    width: 100%;
    padding: 20px;
-   text-transform: capitalize;
    color: #ffffff;
+}
+
+form :where(.input, .textarea)::placeholder{
+   text-transform: capitalize;
 }
 
 .textarea {
    padding: 20px;
    border: none;
-   width: 100%;
-   height: 234px;
    background: var(--main--color);
    border: 2px solid var(--skill--border);
    color: #ffffff;
-   text-transform: capitalize;
    resize: none;
    max-height: 400px;
+}
+
+/* Размеры скроллбара */
+.textarea::-webkit-scrollbar {
+   width: 10px;
+}
+
+/* Трек поле скроллбара */
+.textarea::-webkit-scrollbar-track {
+   background: var(--contacts--p);
+}
+
+/* Ползунок скроллбара */
+.textarea::-webkit-scrollbar-thumb {
+   background: var(--skill--border);
+   border-radius: 10px;
 }
 
 .privacy {
@@ -415,7 +432,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
    color: #FFFFFF;
    font-weight: 500;
    background: var(--h2--before--color);
-   font-size: calc(.9rem + 0.7vw);
+   font-size: calc(.7rem + 0.7vw);
    text-transform: uppercase;
    border: none;
    opacity: .8;
@@ -425,6 +442,28 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
    background-color: var(--h2--before--color);
    opacity: 1;
    color: var(--main--h2--color);
+}
+
+.contact-info>div{
+   position: relative;
+   padding: 0px 0px 0px 15px;
+}
+
+.contact-info>div::before{
+   position: absolute;
+   content: "";
+   width: 10px;
+   height: 10px;
+   background-color:var(--h2--before--color);
+   left: 0;
+   top: 6px;
+}
+
+.contact-info>div>span{
+   color:var(--main--h2--color)
+}
+.contact-info>div>p {
+   color:var(--contacts--p);
 }
 
 footer {
