@@ -469,6 +469,9 @@ form :where(.input, .textarea)::placeholder{
 footer {
    background-color: var(--main--color);
    height: 220px;
+}
+
+.footer {
    position: relative;
 }
 
