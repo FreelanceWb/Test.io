@@ -4,7 +4,7 @@
    --main--color: #0F0F0F;
    --gray--p: #E6E6E6;
    --main--h2--color: #E5E5E5;
-   --h2--before--color: #2B7A0B;
+   --h2--before--color: #16213E;
    --skill--border: #2C2C2C;
    --skill--span: rgba(255, 255, 255, 0.3);
    --contacts--p: #ACACAC;
@@ -22,6 +22,7 @@ html,
 body {
    min-height: 100vh;
    max-width: 100%;
+   cursor: url(../images/cursor.png), auto;
 }
 
 canvas {
@@ -199,7 +200,7 @@ canvas {
 	will-change: transform;
 	text-transform: uppercase;
 	font-weight: 900;
-   font-size: calc(3rem + .7vw);
+   font-size: calc(2rem + .7vw);
    line-height: 140%;
    text-align: center;
    color: #FFFFFF;	
@@ -309,6 +310,67 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 #portfolio span.active::after,
 #portfolio span:hover::after {
    background-color: var(--h2--before--color);
+}
+
+.slick-slide img {
+   border-radius: 7px;
+   object-fit: cover;
+}
+
+.slick-slide {
+   position: relative;
+}
+
+.slick-slide :is(h3, p, div) {
+   position: absolute;
+   color:#ebe5e5;
+   opacity: 0;
+}
+
+.slick-slide h3 {
+   top: 50px;
+   left: 30px;
+}
+
+.slick-slide p {
+   top: 90px;
+   left: 30px;
+   padding: 0px 20px 0px 0px;
+   max-height: 170px;
+   overflow: hidden;
+}
+
+.slick-slide div {
+   bottom: 40px;
+   right: 30px;
+}
+
+.slick-slide::before {
+   position: absolute;
+   content: "";
+   opacity: .8;
+   width: calc(100% - 1rem);
+   height: calc(100% - 1rem);
+   border-radius: 7px;
+}
+
+.slick-slide:hover::before {
+   background-color: #060606;
+   transition: all 0.6s;
+}
+
+.slick-slide:hover :is(h3, p, div){
+   opacity: 1;
+   transition: opacity 1.5s;
+}
+
+.slick-slide:hover div {
+   animation: rotate 2s infinite;
+}
+
+.slick-slide div:hover {
+   animation: none;
+   transform: scale(1.1);
 }
 
 .service-block {
@@ -464,6 +526,11 @@ form :where(.input, .textarea)::placeholder{
 }
 .contact-info>div>p {
    color:var(--contacts--p);
+}
+
+.icons a img {
+   width: 35px;
+   height: auto;
 }
 
 footer {

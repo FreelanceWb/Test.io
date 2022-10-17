@@ -85,6 +85,10 @@
     .skill-block {
         width: calc(33.33333333% - 1rem);
     }
+
+    .layer__header {
+        font-size: calc(4rem + .7vw);
+    }
 }
 
 @media (max-width: 992px) {
