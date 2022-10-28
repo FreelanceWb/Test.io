@@ -233,7 +233,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   position: relative;
   font-weight: 400;
   line-height: 24px;
-  font-size: 20px;
+  font-size: calc(1rem + 0.2vw);
   color: var(--main--h2--color);
   width: fit-content;
   z-index: 2;
@@ -464,6 +464,7 @@ form :where(.input, .textarea)::placeholder {
   text-transform: uppercase;
   border: none;
   opacity: 0.8;
+  width: 100%;
 }
 
 .btn:hover {

@@ -87,6 +87,12 @@
   .layer__header {
     font-size: calc(4rem + 0.7vw);
   }
+
+  .btn {
+    font-size: calc(0.4rem + 0.7vw);
+    width: calc(25% - 1.5rem);
+    margin-right: calc(8.33333333% + 3.5rem);
+  }
 }
 
 @media (max-width: 992px) {
@@ -108,14 +114,12 @@
     width: 100%;
   }
 
-  .btn {
-    font-size: calc(0.4rem + 0.7vw);
-    width: calc(25% - 3.5rem);
-    margin-right: calc(16.666666% + 3.5rem);
-  }
-
   .info {
     width: calc(25% + 3.5rem);
+  }
+
+  .textarea {
+    width: calc(41.6666667% - 1rem);
   }
 
   .carousel_item {
