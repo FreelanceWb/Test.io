@@ -364,7 +364,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .service-block h3 {
-  font-size: calc(1rem + 0.6vw);
+  font-size: calc(0.7rem + 0.6vw);
   line-height: 120%;
   z-index: 2;
   text-transform: capitalize;

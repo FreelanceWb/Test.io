@@ -17,7 +17,7 @@ $(document).ready(function () {
             slidesToShow: 2,
             slidesToScroll: 3,
             centerMode: true,
-            centerPadding: '40px',
+            centerPadding: "40px",
           },
         },
         {
@@ -26,6 +26,7 @@ $(document).ready(function () {
             slidesToShow: 3,
             slidesToScroll: 1,
             centerMode: true,
+            variableWidth: true,
           },
         },
       ],
