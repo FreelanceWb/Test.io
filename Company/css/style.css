@@ -206,23 +206,6 @@ main {
   background-color: var(--main--color);
 }
 
-#about-us h2 {
-  position: relative;
-  color: var(--section--colors);
-  font-weight: 900;
-  line-height: 37px;
-  z-index: 2;
-}
-
-#about-us p {
-  position: relative;
-  font-weight: 500;
-  line-height: 140%;
-  color: var(--gray--p);
-  max-width: 750px;
-  z-index: 2;
-}
-
 main :where(#skills, #portfolio, #services, #contacts) h2 {
   font-weight: 500;
   font-size: 28px;

@@ -111,10 +111,10 @@
   .btn {
     font-size: calc(0.4rem + 0.7vw);
     width: calc(25% - 3.5rem);
-    margin-right: calc(8.33333% + 3.5rem);
+    margin-right: calc(16.666666% + 3.5rem);
   }
 
   .info {
-    width: calc(33.33333333% + 3.5rem);
+    width: calc(25% + 3.5rem);
   }
 }
