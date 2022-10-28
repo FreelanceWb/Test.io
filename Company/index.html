@@ -18,21 +18,25 @@
     
 </head>
 
+
+<!-- TODO LIST:
+1. Сделать переворот карточек
+2. Посмотреть чтобы всё было адаптивно на всех устройствах
+3. Настроить размер и вес шрифтов
+4. Добавить стрелочку на первой главной странице для перехода вниз. Можна без JS. Анимация есть в keyframes.css
+5. По возможности перенести иконки социальных сетей в футер на больших устройствах. Можна на JS и без. Если не получится, то сделаю позже
+-->
+
 <body>
-    <!-- <canvas id="canvas_one"></canvas> -->
-    <!-- меню бургер с логотипом, можно потом подправить позиционирование ссылок и логотипа -->
     <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="z-index-navbar">
         <div class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch pe-0">
             <div class="col-2 text-center ms-lg-1">
                 <a href="#" class="navbar-brand">
-                    <!-- здесь нужно поместить логотип компании -->
                     <img src="images/logo.svg" alt="" width="100" height="auto" class="img-fluid logo">
-                    <!-- с размерами можно играться -->
                 </a>
             </div>
             <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <!-- здесь сделать меню бургер 3 полосы-->
                 <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="70"
                     onclick="this.classList.toggle('active')">
                     <path class="line top"
@@ -44,7 +48,6 @@
             </button>
             <div class="offcanvas offcanvas-top h-100 text-bg-dark align-items-sm-center flex-sm-grow-0 me-sm-2 me-lg-5 mt-4"
                 tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <!-- это наше меню, добавлен эффект подчёркивания при наведении на линк -->
                 <div class="offcanvas-body">
                     <ul class="navbar-nav" id="page-links">
                         <li class="nav-item pe-3">
@@ -69,8 +72,6 @@
             </div>
         </div>
     </nav>
-    
-    <!-- здесь будет надпись фулл стак девелоперс и боковая надпись тоже -->
     <div class="wrapper">
 		<div class="content">
 			<div class="main-header">
@@ -189,7 +190,9 @@
                 </div>
             </div>
         </div>
-<!-- TODO: Нужно следать переворот карочек чтобы с обратной стороны выводилось описание сервиса -->
+<!-- TODO: Нужно следать переворот карочек чтобы с обратной стороны выводилось описание сервиса 
+https://www.w3schools.com/howto/howto_css_flip_card.asp 
+вот здесь можно взять пример-->
         <div class="container-fluid mt-5">
             <div class="pt-5 mb-5"></div>
             <div class="container-sm" id="services">
@@ -236,6 +239,7 @@
                 </div>
             </div>
         </div>
+        <!-- TODO: Я исправлю размещение кнопки и текста политики конфиденциальности. -->
         <div class="container-fluid mt-5 ">
             <div class="pt-5 mb-5"></div>
             <div class="container-sm" id="contacts">
