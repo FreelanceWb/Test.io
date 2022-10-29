@@ -346,10 +346,15 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 278px;
   perspective: 1000px; 
   margin-right: 20px;
   display: inline-flex;
+}
+
+.head-flip-card{ 
+  font-size: 22px; 
+  white-space: nowrap; 
 }
 
 .flip-card-inner {
@@ -377,7 +382,6 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
   padding: 50px;
-  
 }
 
 .flip-card-front {
@@ -386,9 +390,10 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .flip-card-back {
-  background: #16213E;
+  background: #1D1D1D;
   color: white;
   transform: rotateY(180deg);
+  font-size: 10px;
 }
 
 .service-block {
