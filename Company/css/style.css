@@ -350,6 +350,8 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   perspective: 1000px; 
   margin-right: 20px;
   display: inline-flex;
+  border: 1px solid #2C2C2C;
+border-radius: 5px;
   
 }
 
