@@ -350,9 +350,6 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   perspective: 1000px; 
   margin-right: 20px;
   display: inline-flex;
-  border: 1px solid #2C2C2C;
-border-radius: 5px;
-  
 }
 
 .flip-card-inner {
@@ -365,6 +362,8 @@ border-radius: 5px;
   transform-style: preserve-3d;
   align-items: center;
   margin: auto;
+  border: 1px solid #2C2C2C;
+  border-radius: 5px;
 }
 
 .flip-card:hover .flip-card-inner {
