@@ -393,7 +393,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   background: #1D1D1D;
   color: white;
   transform: rotateY(180deg);
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .service-block {
