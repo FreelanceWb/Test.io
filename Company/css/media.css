@@ -90,8 +90,6 @@
 
   .btn {
     font-size: calc(0.4rem + 0.7vw);
-    width: calc(25% - 1.5rem);
-    margin-right: calc(8.33333333% + 3.5rem);
   }
 }
 
