@@ -7,7 +7,7 @@ $(document).ready(function () {
       let id = $(this).attr("href");
       let top = $(id).offset().top;
       $("body,html").animate({ scrollTop: top }, 1500);
-      if (document.querySelector('.ham').classList.contains('active')){
+      if (document.querySelector(".ham").classList.contains("active")) {
         document.querySelector(".navbar-toggler").click();
       }
     }
@@ -35,8 +35,8 @@ $(document).ready(function () {
     this.classList.add("active");
   });
 
-  $(".service-block").on("click", function () {
-    const service_blocks = document.querySelectorAll(".service-block");
+  $(".flip-card").on("click", function () {
+    const service_blocks = document.querySelectorAll(".flip-card");
     service_blocks.forEach((block) => {
       block.classList.remove("active");
     });

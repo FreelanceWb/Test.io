@@ -15,7 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", "sans-serif";
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 html,
@@ -128,7 +128,7 @@ canvas {
   position: relative;
   bottom: 60px;
   z-index: 999;
-  }
+}
 
 .arrow-container img:hover {
   animation: none;
@@ -223,14 +223,17 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .skill-block,
-.service-block {
+.flip-card {
   border: 2px solid var(--skill--border);
   border-radius: 5px;
   position: relative;
   padding: 10px;
   text-transform: uppercase;
   height: 150px;
-  z-index: 2;
+}
+
+.flip-card {
+  padding: 0;
 }
 
 .skill-block p {
@@ -240,14 +243,12 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   font-size: calc(1rem + 0.2vw);
   color: var(--main--h2--color);
   width: fit-content;
-  z-index: 2;
 }
 
 .skill-block img {
   position: absolute;
   right: 5px;
   top: 5px;
-  z-index: 2;
 }
 
 .skill-block span {
@@ -258,7 +259,6 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  z-index: 2;
 }
 
 #portfolio span {
@@ -270,7 +270,6 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   position: relative;
   padding: 0px 0px 3px 0px;
   cursor: pointer;
-  z-index: 2;
 }
 
 #portfolio span:not(.active) {
@@ -345,16 +344,14 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 278px;
-  perspective: 1000px; 
-  margin-right: 20px;
+  height: 270px;
+  perspective: 1000px;
   display: inline-flex;
 }
 
-.head-flip-card{ 
-  font-size: 22px; 
-  white-space: nowrap; 
+.head-flip-card {
+  font-size: calc(1rem + 0.3vw);
+  white-space: nowrap;
 }
 
 .flip-card-inner {
@@ -366,82 +363,51 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   transition: transform 0.8s;
   transform-style: preserve-3d;
   align-items: center;
-  margin: auto;
-  border: 1px solid #2C2C2C;
-  border-radius: 5px;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+.flip-card:hover .flip-card-inner,
+.flip-card.active {
+  background-color: #1d1d1d;
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; 
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  padding: 50px;
+  padding: 50px 10px 0px;
+  color: white;
 }
 
 .flip-card-front {
-  background-color: black;
-  color: white;
+  background-color: transparent;
 }
 
 .flip-card-back {
-  background: #1D1D1D;
-  color: white;
+  background: #1d1d1d;
   transform: rotateY(180deg);
   font-size: 15px;
 }
 
-.service-block {
-  height: 300px;
-  color: var(--main--h2--color);
-  font-weight: 400;
-  text-transform: none;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  transition: all 0.5s;
-  z-index: 2;
-  text-align: center;
-  padding: 25px;
+.flip-card-back.active {
+  transform: rotateY(0deg);
 }
 
-.service-block img {
-  width: 65px;
-  height: auto;
+.learn-more {
+  margin-top: 60px;
+  font-size: calc(0.6rem + 0.2vw);
+  opacity: 0;
 }
 
-.service-block.active,
-.service-block:hover {
-  background-color: var(--h2--before--color);
+.flip-card:hover .learn-more {
+  opacity: 1;
+  transition-delay: 0.1s;
 }
 
-.service-block h3 {
-  font-size: calc(0.7rem + 0.6vw);
-  line-height: 120%;
-  z-index: 2;
-  text-transform: capitalize;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.service-block p {
-  font-size: 15px;
-  line-height: 140%;
-  max-height: 100px;
-  overflow: hidden;
-  z-index: 2;
-  color: #a8a8a8;
-  max-width: 275px;
-}
-
-.service-block.active p,
-.service-block:hover p {
-  color: var(--section--colors);
+.learn-more:hover {
+  text-decoration: underline;
 }
 
 .label {

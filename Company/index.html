@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>freelance</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@400;500;700;900&family=Raleway:wght@300;600;700;800&display=swap"
-        rel="stylesheet">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Montserrat:wght@400;500;700;900&family=Raleway:wght@300;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/keyframes.css">
-    <link rel="stylesheet" href="css/media.css">
-    
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
 
-
-<!-- TODO LIST:
+  <!-- TODO LIST:
 1. Сделать переворот карточек
 2. Посмотреть чтобы всё было адаптивно на всех устройствах
 3. Настроить размер и вес шрифтов
@@ -27,323 +29,462 @@
 5. По возможности перенести иконки социальных сетей в футер на больших устройствах. Можна на JS и без. Если не получится, то сделаю позже
 -->
 
-<body>
-    <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="z-index-navbar">
-        <div class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch pe-0">
-            <div class="col-2 text-center ms-lg-1">
-                <a href="#" class="navbar-brand">
-                    <img src="images/logo.svg" alt="" width="100" height="auto" class="img-fluid logo">
-                </a>
-            </div>
-            <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="70"
-                    onclick="this.classList.toggle('active')">
-                    <path class="line top"
-                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-                    <path class="line middle" d="m 30,50 h 40" />
-                    <path class="line bottom"
-                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-                </svg>
-            </button>
-            <div class="offcanvas offcanvas-top h-100 text-bg-dark align-items-sm-center flex-sm-grow-0 me-sm-2 me-lg-5 mt-4"
-                tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav" id="page-links">
-                        <li class="nav-item pe-3">
-                            <a class="nav-link p-0" href="#skills">SKILLS</a>
-                        </li>
-                        <li class="nav-item pe-3">
-                            <a class="nav-link p-0" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item pe-3">
-                            <a class="nav-link p-0" href="#services">services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="#contacts">CONTACTS</a>
-                        </li>
-                    </ul>
-                    <hr class="mt-5">
-                    <div class="phone_and_mail d-sm-none p-3">
-                        <a href="tel: +380 950 237 867">+380 950 237 867</a>
-                        <p>freelancewb2022@gmail.com</p>
-                    </div>
-                </div>
-            </div>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm position-absolute w-100 p-3"
+      id="z-index-navbar"
+    >
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch pe-0"
+      >
+        <div class="col-2 text-center ms-lg-1">
+          <a href="#" class="navbar-brand">
+            <img
+              src="images/logo.svg"
+              alt=""
+              width="100"
+              height="auto"
+              class="img-fluid logo"
+            />
+          </a>
         </div>
+        <button
+          class="navbar-toggler p-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+        >
+          <svg
+            class="ham hamRotate ham1"
+            viewBox="0 0 100 100"
+            width="70"
+            onclick="this.classList.toggle('active')"
+          >
+            <path
+              class="line top"
+              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+            />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path
+              class="line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+            />
+          </svg>
+        </button>
+        <div
+          class="offcanvas offcanvas-top h-100 text-bg-dark align-items-sm-center flex-sm-grow-0 me-sm-2 me-lg-5 mt-4"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-body">
+            <ul class="navbar-nav" id="page-links">
+              <li class="nav-item pe-3">
+                <a class="nav-link p-0" href="#skills">SKILLS</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link p-0" href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link p-0" href="#services">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-0" href="#contacts">CONTACTS</a>
+              </li>
+            </ul>
+            <hr class="mt-5" />
+            <div class="phone_and_mail d-sm-none p-3">
+              <a href="tel: +380 950 237 867">+380 950 237 867</a>
+              <p>freelancewb2022@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
     <div class="wrapper">
-		<div class="content">
-			<div class="main-header">
-				<div class="layers">
-					<div class="layer__header">
-						<div class="layers__caption">FULL STACK</div>
-						<div class="layers__title">DEVELOPERS</div>
-					</div>
-					<div class="layer layers__base" style="background-image: url(images/nature.jpg);"></div>
-					<div class="layer layers__middle" style="background-image: url(images/up-layer.png);"></div>
-					<div class="layer layers__front" style="background-image: url(images/middle-layer.png);"></div>
-					<div class="layer layers__front" style="background-image: url(images/down-layer.png);"></div>
-				</div>
+      <div class="content">
+        <div class="main-header">
+          <div class="layers">
+            <div class="layer__header">
+              <div class="layers__caption">FULL STACK</div>
+              <div class="layers__title">DEVELOPERS</div>
             </div>
-            <div class="position-absolute section-right-text d-none d-lg-block" id="section-right-text">
-                <p>
-                    LET'S MAKE YOU A WEBSITE
-                </p>
-            </div>
-            <!-- Добавить стрелочку для перехода вниз -->
-            <div class="container-fluid arrow-container">
-                <div class="d-flex justify-content-center">
-                    <a href="#main"><img src="images/arrow-down.png" alt="" class="img-fluid"></i></a>
-                </div>
-            </div>
-            </div>
+            <div
+              class="layer layers__base"
+              style="background-image: url(images/nature.jpg)"
+            ></div>
+            <div
+              class="layer layers__middle"
+              style="background-image: url(images/up-layer.png)"
+            ></div>
+            <div
+              class="layer layers__front"
+              style="background-image: url(images/middle-layer.png)"
+            ></div>
+            <div
+              class="layer layers__front"
+              style="background-image: url(images/down-layer.png)"
+            ></div>
+          </div>
         </div>
+        <div
+          class="position-absolute section-right-text d-none d-lg-block"
+          id="section-right-text"
+        >
+          <p>LET'S MAKE YOU A WEBSITE</p>
+        </div>
+        <!-- Добавить стрелочку для перехода вниз -->
+        <div class="container-fluid arrow-container">
+          <div class="d-flex justify-content-center">
+            <a href="#main"
+              ><img src="images/arrow-down.png" alt="" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
     </div>
     <main class="pt-5 pb-4" id="main">
-        <div class="container-fluid mt-5">
-            <div class="pt-3 mb-5"></div>
-            <div class="container-sm" id="skills">
-                <h2 class="">Skills</h2>
-                <div class="container-fluid p-0 mt-4 d-flex flex-column gap-3 gap-lg-4 flex-sm-row flex-wrap">
-                    <div class="skill-block col-12 col-md-4">
-                        <p class="m-0">FIGMA</p>
-                        <img src="images/figma.svg" alt="" class="img-fluid">
-                        <span class="">DESIgN</span>
-                    </div>
-                    <div class="skill-block col-12">
-                        <p class="m-0">Photoshop</p>
-                        <img src="images/adobe-ph.svg" alt="" class="img-fluid">
-                        <span class="">DESIgN</span>
-                    </div>
-                    <div class="skill-block col-12">
-                        <p class="m-0">css</p>
-                        <img src="images/css.svg" alt="" class="img-fluid">
-                        <span class="">STYLE</span>
-                    </div>
-                    <div class="skill-block col-12">
-                        <p class="m-0">HTML</p>
-                        <img src="images/html.svg" alt="" class="img-fluid">
-                        <span class="">FRONT-end</span>
-                    </div>
-                    <div class="skill-block col-12">
-                        <p class="m-0">python</p>
-                        <img src="images/python.svg" alt="" class="img-fluid">
-                        <span class="">SCRIPTS</span>
-                    </div>
-                    <div class="skill-block col-12">
-                        <p class="m-0">java script</p>
-                        <img src="images/js.svg" alt="" class="img-fluid">
-                        <span class="">SCRIPTS</span>
-                    </div>
-                    <div class="skill-block col-12">
-                        <p class="m-0">BOOTSTRAP</p>
-                        <img src="images/b5.svg" alt="" class="img-fluid">
-                        <span class="">FRAMEWORK</span>
-                    </div>
-                    <div class="skill-block col-12">
-                        <p class="m-0">DJANGO</p>
-                        <img src="images/django.svg" alt="" class="img-fluid">
-                        <span class="">FRAMEWORK</span>
-                    </div>
-                </div>
+      <div class="container-fluid mt-5">
+        <div class="pt-3 mb-5"></div>
+        <div class="container-sm" id="skills">
+          <h2 class="">Skills</h2>
+          <div
+            class="container-fluid p-0 mt-4 d-flex flex-column gap-3 gap-lg-4 flex-sm-row flex-wrap"
+          >
+            <div class="skill-block col-12 col-md-4">
+              <p class="m-0">FIGMA</p>
+              <img src="images/figma.svg" alt="" class="img-fluid" />
+              <span class="">DESIgN</span>
             </div>
+            <div class="skill-block col-12">
+              <p class="m-0">Photoshop</p>
+              <img src="images/adobe-ph.svg" alt="" class="img-fluid" />
+              <span class="">DESIgN</span>
+            </div>
+            <div class="skill-block col-12">
+              <p class="m-0">css</p>
+              <img src="images/css.svg" alt="" class="img-fluid" />
+              <span class="">STYLE</span>
+            </div>
+            <div class="skill-block col-12">
+              <p class="m-0">HTML</p>
+              <img src="images/html.svg" alt="" class="img-fluid" />
+              <span class="">FRONT-end</span>
+            </div>
+            <div class="skill-block col-12">
+              <p class="m-0">python</p>
+              <img src="images/python.svg" alt="" class="img-fluid" />
+              <span class="">SCRIPTS</span>
+            </div>
+            <div class="skill-block col-12">
+              <p class="m-0">java script</p>
+              <img src="images/js.svg" alt="" class="img-fluid" />
+              <span class="">SCRIPTS</span>
+            </div>
+            <div class="skill-block col-12">
+              <p class="m-0">BOOTSTRAP</p>
+              <img src="images/b5.svg" alt="" class="img-fluid" />
+              <span class="">FRAMEWORK</span>
+            </div>
+            <div class="skill-block col-12">
+              <p class="m-0">DJANGO</p>
+              <img src="images/django.svg" alt="" class="img-fluid" />
+              <span class="">FRAMEWORK</span>
+            </div>
+          </div>
         </div>
-        <div class="container-fluid mt-5">
-            <div class="pt-5 mb-5"></div>
-            <div class="container-sm" id="portfolio">
-                <h2 class="">Recent Projects</h2>
-                <div
-                    class="containe-fluid p-0 mt-4 d-flex gap-1 gap-lg-4 justify-content-around justify-content-lg-center">
-                    <span class="active">Everything</span>
-                    <span class="">Lending</span>
-                    <span class="">Design</span>
-                </div>
-            </div>
-            <!-- DONE: Карусель решили оставить такой, без изменений -->
-            <div class="carousel mt-5">
-                <div class="carousel_inner">
-                    <div class="carousel_item p-2">
-                        <h3>Clinic Website</h3>
-                        <p>Клиника по реабилитации человека</p>
-                        <div><a href="#"><img src="images/portfolio-arrow.svg" alt=""></a></div>
-                        <img src="images/portfolio-1.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="carousel_item p-2">
-                        <h3>Clinic Website</h3>
-                        <p>Клиника по реабилитации человека</p>
-                        <div><a href="#"><img src="images/portfolio-arrow.svg" alt=""></a></div>
-                        <img src="images/portfolio-1.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="carousel_item p-2">
-                        <h3>Clinic Website</h3>
-                        <p>Клиника по реабилитации человека</p>
-                        <div><a href="#"><img src="images/portfolio-arrow.svg" alt=""></a></div>
-                        <img src="images/portfolio-1.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="carousel_item p-2">
-                        <h3>Clinic Website</h3>
-                        <p>Клиника по реабилитации человека</p>
-                        <div><a href="#"><img src="images/portfolio-arrow.svg" alt=""></a></div>
-                        <img src="images/portfolio-1.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="carousel_item p-2">
-                        <h3>Clinic Website</h3>
-                        <p>Клиника по реабилитации человека</p>
-                        <div><a href="#"><img src="images/portfolio-arrow.svg" alt=""></a></div>
-                        <img src="images/portfolio-1.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="container-fluid mt-5">
+        <div class="pt-5 mb-5"></div>
+        <div class="container-sm" id="portfolio">
+          <h2 class="">Recent Projects</h2>
+          <div
+            class="containe-fluid p-0 mt-4 d-flex gap-1 gap-lg-4 justify-content-around justify-content-lg-center"
+          >
+            <span class="active">Everything</span>
+            <span class="">Lending</span>
+            <span class="">Design</span>
+          </div>
         </div>
-<!-- TODO: Нужно следать переворот карочек чтобы с обратной стороны выводилось описание сервиса 
+        <!-- DONE: Карусель решили оставить такой, без изменений -->
+        <div class="carousel mt-5">
+          <div class="carousel_inner">
+            <div class="carousel_item p-2">
+              <h3>Clinic Website</h3>
+              <p>Клиника по реабилитации человека</p>
+              <div>
+                <a href="#"><img src="images/portfolio-arrow.svg" alt="" /></a>
+              </div>
+              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="carousel_item p-2">
+              <h3>Clinic Website</h3>
+              <p>Клиника по реабилитации человека</p>
+              <div>
+                <a href="#"><img src="images/portfolio-arrow.svg" alt="" /></a>
+              </div>
+              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="carousel_item p-2">
+              <h3>Clinic Website</h3>
+              <p>Клиника по реабилитации человека</p>
+              <div>
+                <a href="#"><img src="images/portfolio-arrow.svg" alt="" /></a>
+              </div>
+              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="carousel_item p-2">
+              <h3>Clinic Website</h3>
+              <p>Клиника по реабилитации человека</p>
+              <div>
+                <a href="#"><img src="images/portfolio-arrow.svg" alt="" /></a>
+              </div>
+              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
+            </div>
+            <div class="carousel_item p-2">
+              <h3>Clinic Website</h3>
+              <p>Клиника по реабилитации человека</p>
+              <div>
+                <a href="#"><img src="images/portfolio-arrow.svg" alt="" /></a>
+              </div>
+              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TODO: Нужно следать переворот карочек чтобы с обратной стороны выводилось описание сервиса 
 https://www.w3schools.com/howto/howto_css_flip_card.asp 
 вот здесь можно взять пример-->
-<div class="container-fluid mt-5">
-    <div class="pt-5 mb-5"></div>
-    <div class="container-sm" id="services">
-        <h2 class="">Services</h2>
-        <div class="flip-card"> 
-            <div class="flip-card-inner"> 
-                <div class="flip-card-front"> 
-                    <img src="images/ui_ux.svg" alt="" style=""> 
-                    <p class="head-flip-card">Landing page</p> 
-                    <span>from 399$</span> 
-                </div> 
-                <div class="flip-card-back">
-                    <h3>Landing page</h3>
-                    <p>Thinking over the user structure 
-                        and appearence of the site 
-                        or interface</p> 
-                    <span>from 399$</span> 
-                </div> 
-            </div> 
-        </div>
-
-        <div class="flip-card"> 
-            <div class="flip-card-inner"> 
-                <div class="flip-card-front"> 
-                    <img src="images/console.svg" alt="" style=""> 
-                    <p class="head-flip-card">Web Programming</p> 
-                    <span>from 499$</span> 
-                </div> 
-                <div class="flip-card-back">
-                    <h3>Web Programming</h3>   
-                    <p>Programming your web system
-                    (online store, social network,
-                    video hosting, ordering and
-                    booking services)</p>
-                    <span>from 499$</span>
-                </div> 
-            </div> 
-        </div>
-
-        <div class="flip-card"> 
-            <div class="flip-card-inner"> 
-                <div class="flip-card-front"> 
-                    <img src="images/dashboard.svg" alt="" style=""> 
-                    <p class="head-flip-card">Internet Shop</p> 
-                    <span>from 599$</span> 
-                </div> 
-                <div class="flip-card-back">
-                    <h3>Internet Shop</h3>
-                    <p>Development of the structure
-                    and appearence of the site, as
-                    well as its programming</p> 
-                    <span>from 599$</span> 
-                </div> 
-            </div> 
-        </div>
-
-        <div class="flip-card"> 
-            <div class="flip-card-inner"> 
-                <div class="flip-card-front"> 
-                    <img src="images/red_flag.svg" alt="" style=""> 
-                    <p class="head-flip-card">Branding</p> 
-                    <span>from 199$</span> 
-                </div> 
-                <div class="flip-card-back"> 
-                    <h3>Branding</h3>
-                    <p>Brand development for the
-                    digital environment, online
-                    and any digital media</p>
-                    <span>from 199$</span>  
-                </div> 
-            </div> 
-        </div>
-    </div>
-</div>
-        <!-- TODO: Я исправлю размещение кнопки и текста политики конфиденциальности. -->
-        <div class="container-fluid mt-5 ">
-            <div class="pt-5 mb-5"></div>
-            <div class="container-sm" id="contacts">
-                <h2 class="">Drop A Line</h2>
-                <div class="d-flex mt-4 flex-wrap gap-sm-5 justify-content-lg-between align-items-lg-start">
-                    <form class="col-12 d-flex flex-column gap-3 flex-sm-row flex-wrap justify-content-between" method="post">
-                        <div class="info col-12 d-flex justify-content-between flex-wrap gap-3 order-sm-2 flex-lg-column">
-                            <label for="name" class="label col-12">
-                                <input class="input" id="name" type="text" name="name" placeholder="Name">
-                            </label>
-                            <label for="name" class="label col-12">
-                                <input class="input" id="name" type="text" name="name" placeholder="Email">
-                            </label>
-                        </div>
-                        <textarea class="textarea col-12 order-sm-3" placeholder="Tell us what do you want"></textarea>
-                        <div class="d-flex align-items-center privacy gap-2 order-sm-5 col-sm-10 col-md-4 col-lg-5">
-                            <input type="checkbox" name="" id=""><p class="m-0">I agree with the <a href=""><span>Privary Policy</span></a></p>
-                        </div>
-                        <div class="d-none d-sm-block col-md-7 col-lg-6 order-sm-4"></div>
-                        <div class="d-none d-sm-block col-md-7 col-lg-6 order-sm-5"></div>
-                        <div class="mt-2 col-sm-4 col-md-4 col-lg-5 order-sm-5"><button class="btn m-lg-0 w-100">SEND MESSAGE</button></div>
-                        <div class="col-12 d-flex flex-column contact-info order-sm-1 flex-sm-row gap-2 col-lg-3 flex-lg-column">
-                            <div class="col-6 d-flex flex-column pe-2"><span>Phone</span>
-                            <p>+380 95 02 37 867</p></div>
-                            <div class="col-6 d-flex flex-column pe-2"><span>Email</span>
-                            <p>freelancewb2022@gmail.com</p></div>
-                        </div>
-                    </form>
-                    <div class="col-12 d-sm-none icons d-flex gap-3 mt-2">
-                        <a href="#"><img src="images/insta.svg" alt="" class="img-fluid"></a>
-                        <a href="#"><img src="images/telegram.svg" alt="" class="img-fluid"></a>
-                        <a href="#"><img src="images/behance.svg" alt="" class="img-fluid"></a>
-                        <a href="#"><img src="images/github.svg" alt="" class="img-fluid"></a>
-                    </div>
+      <div class="container-fluid mt-5">
+        <div class="pt-5 mb-5 d-none d-sm-block"></div>
+        <div class="container-sm" id="services">
+          <h2 class="">Services</h2>
+          <div class="d-flex flex-column gap-2 flex-sm-row flex-wrap">
+            <div class="flip-card col-12">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/ui_ux.svg" alt="" />
+                  <p class="head-flip-card">Landing page</p>
+                  <span>from 399$</span>
+                  <div class="learn-more">learn more</div>
                 </div>
+                <div class="flip-card-back">
+                  <h3>Landing page</h3>
+                  <p>
+                    Thinking over the user structure and appearence of the site
+                    or interface
+                  </p>
+                  <span>from 399$</span>
+                  <a href="#">order a service</a>
+                </div>
+              </div>
             </div>
+            <div class="flip-card col-12">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/console.svg" alt="" />
+                  <p class="head-flip-card">Web Programming</p>
+                  <span>from 499$</span>
+                  <div class="learn-more">learn more</div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Web Programming</h3>
+                  <p>
+                    Programming your web system (online store, social network,
+                    video hosting, ordering and booking services)
+                  </p>
+                  <span>from 499$</span>
+                  <a href="#">order a service</a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card col-12">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/dashboard.svg" alt="" />
+                  <p class="head-flip-card">Internet Shop</p>
+                  <span>from 599$</span>
+                  <div class="learn-more">learn more</div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Internet Shop</h3>
+                  <p>
+                    Development of the structure and appearence of the site, as
+                    well as its programming
+                  </p>
+                  <span>from 599$</span>
+                  <a href="#">order a service</a>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card col-12">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="images/red_flag.svg" alt="" />
+                  <p class="head-flip-card">Branding</p>
+                  <span>from 199$</span>
+                  <div class="learn-more">learn more</div>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Branding</h3>
+                  <p>
+                    Brand development for the digital environment, online and
+                    any digital media
+                  </p>
+                  <span>from 199$</span>
+                  <a href="#">order a service</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TODO: Я исправлю размещение кнопки и текста политики конфиденциальности. -->
+        <div class="container-fluid mt-5">
+          <div class="pt-5 mb-5"></div>
+          <div class="container-sm" id="contacts">
+            <h2 class="">Drop A Line</h2>
+            <div
+              class="d-flex mt-4 flex-wrap gap-sm-5 justify-content-lg-between align-items-lg-start"
+            >
+              <form
+                class="col-12 d-flex flex-column gap-3 flex-sm-row flex-wrap justify-content-between"
+                method="post"
+              >
+                <div
+                  class="info col-12 d-flex justify-content-between flex-wrap gap-3 order-sm-2 flex-lg-column"
+                >
+                  <label for="name" class="label col-12">
+                    <input
+                      class="input"
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                    />
+                  </label>
+                  <label for="name" class="label col-12">
+                    <input
+                      class="input"
+                      id="name"
+                      type="text"
+                      name="name"
+                      placeholder="Email"
+                    />
+                  </label>
+                </div>
+                <textarea
+                  class="textarea col-12 order-sm-3"
+                  placeholder="Tell us what do you want"
+                ></textarea>
+                <div
+                  class="d-flex align-items-center privacy gap-2 order-sm-5 col-sm-10 col-md-4 col-lg-5 ps-lg-3"
+                >
+                  <input type="checkbox" name="" id="" />
+                  <p class="m-0">
+                    I agree with the <a href=""><span>Privary Policy</span></a>
+                  </p>
+                </div>
+                <div class="d-none d-sm-block col-md-7 col-lg-6 order-sm-4">
+                  <div class="col-12 d-none icons d-sm-flex gap-4">
+                    <a href="#"
+                      ><img src="images/insta.svg" alt="" class="img-fluid"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/telegram.svg" alt="" class="img-fluid"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/behance.svg" alt="" class="img-fluid"
+                    /></a>
+                    <a href="#"
+                      ><img src="images/github.svg" alt="" class="img-fluid"
+                    /></a>
+                  </div>
+                </div>
+                <div
+                  class="d-none d-sm-block col-md-7 col-lg-6 order-sm-5"
+                ></div>
+                <div class="mt-2 col-sm-4 col-md-4 col-lg-5 ps-lg-3 order-sm-5">
+                  <button class="btn m-lg-0">SEND MESSAGE</button>
+                </div>
+                <div
+                  class="col-12 d-flex flex-column contact-info order-sm-1 flex-sm-row gap-2 col-lg-3 flex-lg-column"
+                >
+                  <div class="col-6 d-flex flex-column pe-2 col-lg-12">
+                    <span>Phone</span>
+                    <p>+380 95 02 37 867</p>
+                  </div>
+                  <div class="col-6 d-flex flex-column pe-2 col-lg-12">
+                    <span>Email</span>
+                    <p>freelancewb2022@gmail.com</p>
+                  </div>
+                </div>
+              </form>
+              <div class="col-12 d-sm-none icons d-flex gap-3 mt-2">
+                <a href="#"
+                  ><img src="images/insta.svg" alt="" class="img-fluid"
+                /></a>
+                <a href="#"
+                  ><img src="images/telegram.svg" alt="" class="img-fluid"
+                /></a>
+                <a href="#"
+                  ><img src="images/behance.svg" alt="" class="img-fluid"
+                /></a>
+                <a href="#"
+                  ><img src="images/github.svg" alt="" class="img-fluid"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="d-none d-sm-block">
-        <div class="container-fluid">
-            <div class="container-sm pb-3 footer">
-                <img src="./images/logo.svg" class="img-fluid footer-logo">
-                <div
-                    class="pt-3 col-8 text-center d-flex flex-column m-auto flex-wrap gap-3 footer-text col-sm-10 col-lg-9 pt-sm-5 m-sm-0 ms-sm-auto align-items-center flex-sm-row">
-                    <a href="#skills"><span>SKILLS</span></a>
-                    <a href="#portfolio"><span>PORTFOLIO</span></a>
-                    <a href="#services"><span>SERVICES</span></a>
-                    <a href="#contacts" class="d-none d-lg-inline"><span>CONTACTS</span></a>
-                    <div class="footer-right text-center ms-lg-auto"> @2022 All reserved</div>
-                </div>
+      <div class="container-fluid">
+        <div class="container-sm pb-3 footer">
+          <img src="./images/logo.svg" class="img-fluid footer-logo" />
+          <div
+            class="pt-3 col-8 text-center justify-content-center d-flex flex-column m-auto flex-wrap gap-3 footer-text col-sm-10 col-lg-9 pt-md-5 m-sm-0 ms-sm-auto align-items-center flex-sm-row"
+          >
+            <a href="#skills"><span>SKILLS</span></a>
+            <a href="#portfolio"><span>PORTFOLIO</span></a>
+            <a href="#services"><span>SERVICES</span></a>
+            <a href="#contacts" class="d-none d-lg-inline"
+              ><span>CONTACTS</span></a
+            >
+            <div class="footer-right text-center ms-lg-auto">
+              @2022 All reserved
             </div>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- jQuery и js файлы -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/slick.min.js"></script>
     <script src="js/use-slick.js"></script>
     <script src="js/fluid.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>

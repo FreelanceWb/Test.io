@@ -1,8 +1,4 @@
 @media (max-width: 576px) {
-  .contact-block.col-6 {
-    width: calc(50% - 0.5rem);
-  }
-
   .offcanvas {
     background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 1)),
       url("../images/nature.jpg");
@@ -39,12 +35,6 @@
     text-decoration: none;
   }
 
-  #page-links li a.active::after,
-  #page-links li a:hover::after {
-    position: relative;
-    content: "";
-  }
-
   .logo {
     position: absolute;
     left: 15px;
@@ -62,7 +52,7 @@
 
 @media (min-width: 576px) {
   .skill-block,
-  .service-block,
+  .flip-card,
   .label {
     width: calc(50% - 0.5rem);
   }
@@ -100,7 +90,7 @@
 }
 
 @media (min-width: 992px) {
-  .service-block {
+  .flip-card {
     width: calc(25% - 0.5rem);
   }
 
@@ -122,5 +112,9 @@
 
   .carousel_item {
     width: 625px;
+  }
+
+  .btn {
+    width: calc(58.33333333% - 1rem);
   }
 }
