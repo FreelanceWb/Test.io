@@ -1,0 +1,160 @@
+@font-face {
+	font-family: 'AvenirNextCyr-Bold';
+	src: url('../fonts/avenirnextcyr-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-bold.svg#avenirnextcyr-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-BoldItalic';
+	src: url('../fonts/avenirnextcyr-bolditalic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-bolditalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-bolditalic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-bolditalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-bolditalic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-bolditalic.svg#avenirnextcyr-bolditalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Demi';
+	src: url('../fonts/avenirnextcyr-demi.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-demi.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-demi.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-demi.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-demi.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-DemiItalic';
+	src: url('../fonts/avenirnextcyr-demiitalic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-demiitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-demiitalic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-demiitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-demiitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-demiitalic.svg#avenirnextcyr-demiitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Heavy';
+	src: url('../fonts/avenirnextcyr-heavy.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-heavy.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-heavy.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-heavy.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-heavy.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-heavy.svg#avenirnextcyr-heavy') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-HeavyItalic';
+	src: url('../fonts/avenirnextcyr-heavyitalic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-heavyitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-heavyitalic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-heavyitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-heavyitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-heavyitalic.svg#avenirnextcyr-heavyitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Italic';
+	src: url('../fonts/avenirnextcyr-italic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-italic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-italic.svg#avenirnextcyr-italic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Light';
+	src: url('../fonts/avenirnextcyr-light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-light.svg#avenirnextcyr-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-LightItalic';
+	src: url('../fonts/avenirnextcyr-lightitalic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-lightitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-lightitalic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-lightitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-lightitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-lightitalic.svg#avenirnextcyr-lightitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Medium';
+	src: url('../fonts/avenirnextcyr-medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-medium.svg#avenirnextcyr-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-MediumItalic';
+	src: url('../fonts/avenirnextcyr-mediumitalic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-mediumitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-mediumitalic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-mediumitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-mediumitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-mediumitalic.svg#avenirnextcyr-mediumitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Regular';
+	src: url('../fonts/avenirnextcyr-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Thin';
+	src: url('../fonts/avenirnextcyr-thin.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-thin.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-thin.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-thin.svg#avenirnextcyr-thin') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-ThinItalic';
+	src: url('../fonts/avenirnextcyr-thinitalic.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-thinitalic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-thinitalic.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-thinitalic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-thinitalic.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-thinitalic.svg#avenirnextcyr-thinitalic') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-UltraLight';
+	src: url('../fonts/avenirnextcyr-ultralight.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-ultralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-ultralight.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-ultralight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-ultralight.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-ultralight.svg#avenirnextcyr-ultralight') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-UltraLightIt';
+	src: url('../fonts/avenirnextcyr-ultralightit.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/avenirnextcyr-ultralightit.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/avenirnextcyr-ultralightit.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/avenirnextcyr-ultralightit.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/avenirnextcyr-ultralightit.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/avenirnextcyr-ultralightit.svg#avenirnextcyr-ultralightit') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+

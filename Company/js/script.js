@@ -35,11 +35,11 @@ $(document).ready(function () {
     this.classList.add("active");
   });
 
-  $(".flip-card").on("click", function () {
-    const service_blocks = document.querySelectorAll(".flip-card");
-    service_blocks.forEach((block) => {
-      block.classList.remove("active");
-    });
-    this.classList.add("active");
-  });
+  // $(".flip-card").on("click", function () {
+  //   const service_blocks = document.querySelectorAll(".flip-card");
+  //   service_blocks.forEach((block) => {
+  //     block.classList.remove("active");
+  //   });
+  //   this.classList.add("active");
+  // });
 });
