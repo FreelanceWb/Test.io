@@ -287,7 +287,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   position: relative;
 }
 
-.slick-slide :is(h3, p, span, .site-logo, .show-project) {
+.slick-slide :is(h3, p, .site-title, .site-logo, .show-project) {
   position: absolute;
   opacity: 0;
 }
@@ -320,7 +320,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 
 .show-project {
   text-transform: uppercase;
-  bottom: 70px;
+  bottom: 50px;
   left: 50px;
   width: 100%;
   color: #ebe5e5;
@@ -329,6 +329,10 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 
 .show-project span:hover {
   text-decoration: underline;
+}
+
+.show-project img {
+  margin-left: 10px;
 }
 
 .slick-slide::before {
@@ -376,18 +380,18 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   font-family: "Avenir Next Cyr";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(0.9rem + 0.1vw);
   color: #16213e;
 }
 
 .service > ul > li > span {
   color: #ffffff;
+  font-size: calc(0.9rem + 0.1vw);
 }
 
 .service > span {
   text-transform: uppercase;
   font-size: calc(2rem + 0.3vw);
-  margin: 30px 0px 0px 15px;
+  margin: 30px 0px 10px 15px;
 }
 
 .label {
