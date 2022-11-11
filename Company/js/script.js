@@ -13,12 +13,6 @@ $(document).ready(function () {
     }
   );
 
-  let navbar = document.getElementById("z-index-navbar");
-  window.addEventListener("scroll", function () {
-    let value = window.scrollY;
-    navbar.style.top = value * 0.2 + "px";
-  });
-
   $("#page-links li a").on("click", function () {
     const page_links = document.querySelectorAll("#page-links li a");
     page_links.forEach((link) => {
@@ -34,12 +28,4 @@ $(document).ready(function () {
     });
     this.classList.add("active");
   });
-
-  // $(".flip-card").on("click", function () {
-  //   const service_blocks = document.querySelectorAll(".flip-card");
-  //   service_blocks.forEach((block) => {
-  //     block.classList.remove("active");
-  //   });
-  //   this.classList.add("active");
-  // });
 });

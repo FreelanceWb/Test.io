@@ -19,18 +19,16 @@
   </head>
 
   <!-- TODO LIST:
-1. Сделать переворот карточек
-2. Посмотреть чтобы всё было адаптивно на всех устройствах
-3. Настроить размер и вес шрифтов
-4. Добавить стрелочку на первой главной странице для перехода вниз. Можна без JS. Анимация есть в keyframes.css
-5. По возможности перенести иконки социальных сетей в футер на больших устройствах. Можна на JS и без. Если не получится, то сделаю позже
+1. Посмотреть чтобы всё было адаптивно на всех устройствах
+2. Настроить размер и вес шрифтов
 -->
-
   <body>
-    <nav
-      class="navbar navbar-expand-sm position-absolute w-100 p-3"
-      id="z-index-navbar"
-    >
+    <div class="bubbles">
+      <div style="--left: 30%; --top: 35%"></div>
+      <div style="--left: 40%; --top: 50%"></div>
+      <div style="--left: 45%; --top: 35%"></div>
+    </div>
+    <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="menu">
       <div
         class="container-fluid d-flex justify-content-between align-items-center align-items-lg-stretch pe-0"
       >
@@ -99,45 +97,13 @@
         </div>
       </div>
     </nav>
-    <div class="wrapper">
-      <div class="content">
-        <div class="main-header">
-          <div class="layers">
-            <div class="layer__header">
-              <div class="layers__caption">FULL STACK</div>
-              <div class="layers__title">DEVELOPERS</div>
-            </div>
-            <div
-              class="layer layers__base"
-              style="background-image: url(images/nature.jpg)"
-            ></div>
-            <div
-              class="layer layers__middle"
-              style="background-image: url(images/up-layer.png)"
-            ></div>
-            <div
-              class="layer layers__front"
-              style="background-image: url(images/middle-layer.png)"
-            ></div>
-            <div
-              class="layer layers__front"
-              style="background-image: url(images/down-layer.png)"
-            ></div>
-          </div>
-        </div>
-        <div
-          class="position-absolute section-right-text d-none d-lg-block"
-          id="section-right-text"
-        >
-          <p>LET'S MAKE YOU A WEBSITE</p>
-        </div>
-        <!-- Добавить стрелочку для перехода вниз -->
-        <div class="container-fluid arrow-container">
-          <div class="d-flex justify-content-center">
-            <a href="#main"
-              ><img src="images/arrow-down.png" alt="" class="img-fluid"
-            /></a>
-          </div>
+    <div class="main-header">
+      <h1>FULL STACK DEVELOPERS</h1>
+      <div class="container-fluid arrow-container">
+        <div class="d-flex justify-content-center">
+          <a href="#main"
+            ><img src="images/arrow-down.png" alt="" class="img-fluid"
+          /></a>
         </div>
       </div>
     </div>
@@ -443,7 +409,6 @@
         </div>
       </div>
     </footer>
-
     <!-- jQuery и js файлы -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -467,8 +432,6 @@
     ></script>
     <script src="js/slick.min.js"></script>
     <script src="js/use-slick.js"></script>
-    <script src="js/fluid.min.js"></script>
-    <script src="js/app.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
