@@ -110,7 +110,7 @@
   }
 
   .textarea {
-    width: calc(41.6666667% - 1rem);
+    width: calc(41.6666667% - 0.5rem);
   }
 
   .carousel_item {
@@ -118,6 +118,6 @@
   }
 
   .btn {
-    width: calc(58.33333333% - 1rem);
+    width: calc(58.33333333% - 2rem);
   }
 }

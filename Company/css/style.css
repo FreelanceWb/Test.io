@@ -401,7 +401,8 @@ form :where(.input, .textarea)::placeholder {
 }
 
 .privacy {
-  color: var(--section--colors);
+  color: #706e6e;
+  font-size: 13px;
 }
 
 .privacy a {
@@ -444,7 +445,7 @@ form :where(.input, .textarea)::placeholder {
 
 .contact-info > div {
   position: relative;
-  padding: 0px 0px 0px 15px;
+  padding: 0px 0px 0px 20px;
 }
 
 .contact-info > div::before {
@@ -462,6 +463,7 @@ form :where(.input, .textarea)::placeholder {
 }
 .contact-info > div > p {
   color: var(--contacts--p);
+  word-break: break-word;
 }
 
 .icons a img {
