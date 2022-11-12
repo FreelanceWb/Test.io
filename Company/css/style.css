@@ -312,11 +312,11 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .name_of_service {
-  padding: 15px 20px;
+  padding: 20px;
   height: fit-content;
   border-bottom: 1px solid var(--skill--border);
   font-size: calc(1rem + 0.2vw);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .service > ul {
@@ -327,7 +327,8 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 .service > ul > li {
   font-family: "Avenir Next Cyr";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 450;
+  margin-top: 4px;
   color: var(--h2--before--color);
 }
 
