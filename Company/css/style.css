@@ -172,12 +172,12 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .skill-block {
-  border: 2px solid var(--skill--border);
+  border: 1px solid var(--skill--border);
   border-radius: 5px;
   position: relative;
   padding: 10px;
   text-transform: uppercase;
-  height: 150px;
+  height: 175px;
 }
 
 .skill-block p {
@@ -226,7 +226,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .portfolio-item > img:not(.site-logo) {
-  border-radius: 7px;
+  border-radius: 5px;
   object-fit: cover;
   height: 100%;
 }
