@@ -4,7 +4,7 @@
   --main--color: #0f0f0f;
   --gray--p: #e6e6e6;
   --main--h2--color: #e5e5e5;
-  --h2--before--color: #16213e;
+  --h2--before--color: #54b435;
   --skill--border: #2c2c2c;
   --skill--span: rgba(255, 255, 255, 0.3);
   --contacts--p: #acacac;
@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "AvenirNextCyr-Regular", "sans-serif";
+  font-family: "Fira Code", monospace;
   scroll-behavior: smooth;
 }
 
@@ -42,18 +42,7 @@ body {
 
 .bubbles :nth-child(1) {
   background-color: #00a3ff;
-  clip-path: polygon(
-    39% 0,
-    70% 24%,
-    90% 0,
-    100% 43%,
-    100% 78%,
-    77% 94%,
-    57% 70%,
-    28% 84%,
-    8% 59%,
-    0 21%
-  );
+  border-radius: 29% 71% 35% 65% / 30% 43% 57% 70%;
   animation: moveBubble 10s infinite linear;
 }
 
@@ -163,7 +152,8 @@ body {
   font-size: calc(2rem + 4.5vw);
   color: #ece9e9;
   text-align: center;
-  max-width: 1000px;
+  max-width: 700px;
+  line-height: 120%;
 }
 
 /* второй слайд */
@@ -243,7 +233,6 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 
 .portfolio-item {
   position: relative;
-  /* height: 300px; */
 }
 
 .portfolio-item :is(h3, p, .site-title, .site-logo, .show-project) {
@@ -255,6 +244,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   top: 120px;
   left: 50px;
   color: #ebe5e5;
+  font-size: calc(1rem + 0.2vw);
 }
 
 .portfolio-item p {
@@ -279,9 +269,8 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 
 .show-project {
   text-transform: uppercase;
-  bottom: 50px;
+  bottom: 10%;
   left: 50px;
-  width: 100%;
   color: #ebe5e5;
   display: flex;
 }
@@ -339,7 +328,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   font-family: "Avenir Next Cyr";
   font-style: normal;
   font-weight: 400;
-  color: #16213e;
+  color: var(--h2--before--color);
 }
 
 .service > ul > li > span {
