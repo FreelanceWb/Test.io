@@ -235,27 +235,29 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   background-color: var(--h2--before--color);
 }
 
-.slick-slide > div > a > img {
+.portfolio-item > img:not(.site-logo) {
   border-radius: 7px;
   object-fit: cover;
+  height: 100%;
 }
 
-.slick-slide {
+.portfolio-item {
   position: relative;
+  /* height: 300px; */
 }
 
-.slick-slide :is(h3, p, .site-title, .site-logo, .show-project) {
+.portfolio-item :is(h3, p, .site-title, .site-logo, .show-project) {
   position: absolute;
   opacity: 0;
 }
 
-.slick-slide h3 {
+.portfolio-item h3 {
   top: 120px;
   left: 50px;
   color: #ebe5e5;
 }
 
-.slick-slide p {
+.portfolio-item p {
   top: 160px;
   left: 50px;
   padding: 0px 20px 0px 0px;
@@ -264,7 +266,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   color: #c0c0c0;
 }
 
-.slick-slide > span {
+.portfolio-item > span {
   top: 60px;
   right: 40px;
   color: #ebe5e5;
@@ -292,7 +294,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   margin-left: 10px;
 }
 
-.slick-slide::before {
+.portfolio-item::before {
   position: absolute;
   content: "";
   opacity: 0.8;
@@ -302,12 +304,12 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   border-radius: 7px;
 }
 
-.slick-slide:hover::before {
+.portfolio-item:hover::before {
   background-color: #060606;
   transition: all 0.6s;
 }
 
-.slick-slide:hover :is(h3, p, span, .site-logo, .show-project) {
+.portfolio-item:hover :is(h3, p, span, .site-logo, .show-project) {
   opacity: 1;
   transition: opacity 1.5s;
 }
