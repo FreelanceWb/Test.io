@@ -333,7 +333,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .service > ul {
-  margin-top: 10px;
+  margin-top: 6px;
   flex: 1 1 0;
 }
 
