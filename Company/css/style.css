@@ -160,7 +160,6 @@ body {
 
 main :where(#skills, #portfolio, #services, #contacts) h2 {
   font-weight: 700;
-  /* font-style: normal; */
   font-size: 28px;
   line-height: 24px;
   color: var(--main--h2--color);
@@ -225,9 +224,16 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   background-color: var(--h2--before--color);
 }
 
+.portfolio :nth-child(odd):is(.portfolio-item) {
+  padding: 0px 1rem 1rem 0px;
+}
+
+.portfolio :nth-child(even):is(.portfolio-item) {
+  padding: 0px 0px 1rem 0px;
+}
+
 .portfolio-item > img:not(.site-logo) {
   border-radius: 5px;
-  object-fit: cover;
   height: 100%;
 }
 
@@ -283,11 +289,18 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   margin-left: 10px;
 }
 
+.portfolio :nth-child(odd)::before {
+  width: calc(100% - 2rem);
+}
+
+.portfolio :nth-child(even)::before {
+  width: calc(100% - 1rem);
+}
+
 .portfolio-item::before {
   position: absolute;
   content: "";
   opacity: 0.8;
-  width: calc(100% - 2rem);
   height: calc(100% - 2rem);
   transform: translate(0.5rem, 0.5rem);
   border-radius: 7px;
