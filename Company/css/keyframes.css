@@ -30,7 +30,7 @@
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(-40px, -50px);
+    transform: translate(var(--toX), var(--toY));
     opacity: 0.6;
   }
   100% {

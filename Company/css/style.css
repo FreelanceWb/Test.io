@@ -27,7 +27,7 @@ body {
 }
 
 .bubbles > div {
-  width: 400px;
+  width: var(--width);
   height: 130px;
   position: absolute;
   -webkit-filter: blur(70px);
@@ -35,7 +35,8 @@ body {
   -o-filter: blur(70px);
   -ms-filter: blur(70px);
   filter: blur(70px);
-  opacity: 0.5;
+  backdrop-filter: blur(10px);
+  opacity: 0.2;
   left: var(--left);
   top: var(--top);
 }
