@@ -24,6 +24,7 @@ body {
   max-width: 100%;
   cursor: url(../images/cursor.png), auto;
   background-color: var(--main--color);
+  overflow-x: hidden;
 }
 
 .bubbles > div {
@@ -160,14 +161,14 @@ body {
 /* второй слайд */
 
 main :where(#skills, #portfolio, #services, #contacts) h2 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 28px;
   line-height: 24px;
   color: var(--main--h2--color);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 20px 0px;
   text-transform: capitalize;
 }
 
@@ -175,14 +176,14 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
   border: 1px solid var(--skill--border);
   border-radius: 5px;
   position: relative;
-  padding: 10px;
+  padding: 20px;
   text-transform: uppercase;
   height: 175px;
 }
 
 .skill-block p {
   position: relative;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   font-size: calc(1rem + 0.2vw);
   color: var(--main--h2--color);
@@ -191,14 +192,14 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 
 .skill-block img {
   position: absolute;
-  right: 5px;
-  top: 5px;
+  right: 15px;
+  top: 15px;
 }
 
 .skill-block span {
   position: absolute;
-  left: 10px;
-  bottom: 10px;
+  left: 20px;
+  bottom: 20px;
   color: var(--skill--span);
   font-weight: 400;
   font-size: 15px;
@@ -232,19 +233,21 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 
 .portfolio-item h3 {
   color: #ebe5e5;
-  font-size: calc(1.2rem + 0.4vw);
+  font-size: calc(1.1rem + 0.4vw);
   margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .portfolio-item p {
-  color: #c0c0c0;
-  font-size: calc(0.9rem + 0.4vw);
+  color: #8a8a8a;
+  font-size: calc(0.8rem + 0.4vw);
   max-height: 170px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .show-project {
-  font-size: calc(1rem + 0.4vw);
+  font-size: calc(0.9rem + 0.4vw);
   text-transform: uppercase;
   color: #ebe5e5;
   display: flex;
@@ -277,7 +280,6 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .service > ul > li {
-  font-family: "Avenir Next Cyr";
   font-style: normal;
   font-weight: 450;
   margin-top: 10px;
@@ -296,7 +298,7 @@ main :where(#skills, #portfolio, #services, #contacts) h2 {
 }
 
 .label {
-  border: 2px solid var(--skill--border);
+  border: 1px solid var(--skill--border);
   outline: none;
 }
 
@@ -317,7 +319,7 @@ form :where(.input, .textarea)::placeholder {
   padding: 20px;
   border: none;
   background: var(--main--color);
-  border: 2px solid var(--skill--border);
+  border: 1px solid var(--skill--border);
   color: #ffffff;
   resize: none;
   max-height: 400px;
@@ -360,7 +362,6 @@ form :where(.input, .textarea)::placeholder {
 .label,
 .btn {
   border-radius: 7px;
-  z-index: 2;
   outline: none;
 }
 
