@@ -22,43 +22,11 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
 
-  <!-- TODO LIST:
-1. Настроить размер и вес шрифтов
--->
   <body>
-    <div class="bubbles">
-      <div
-        style="
-          --left: 30%;
-          --top: 35%;
-          --toX: 40px;
-          --toY: -50px;
-          --width: 270px;
-        "
-      ></div>
-      <div
-        style="
-          --left: 42%;
-          --top: 50%;
-          --toX: -40px;
-          --toY: 40px;
-          --width: 230px;
-        "
-      ></div>
-      <div
-        style="
-          --left: 47%;
-          --top: 35%;
-          --toX: 90px;
-          --toY: 28px;
-          --width: 320px;
-        "
-      ></div>
-    </div>
-    <nav class="navbar navbar-expand-sm position-absolute w-100 p-3" id="menu">
+    <!-- <nav class="navbar position-absolute top-0 start-0 w-100">
       <div class="container-fluid d-flex justify-content-between">
-        <div class="col-2 text-center ms-lg-1">
-          <a href="#" class="navbar-brand">
+        <div class="col-2">
+          <a href="#">
             <img
               src="images/logo.svg"
               alt=""
@@ -68,368 +36,320 @@
             />
           </a>
         </div>
-        <button
-          class="navbar-toggler p-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-        >
-          <svg
-            class="ham hamRotate ham1"
-            viewBox="0 0 100 100"
-            width="70"
-            onclick="this.classList.toggle('active')"
-          >
-            <path
-              class="line top"
-              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
-            />
-            <path class="line middle" d="m 30,50 h 40" />
-            <path
-              class="line bottom"
-              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
-            />
-          </svg>
+        <button class="burger-button p-0 d-sm-none" type="button">
+          <label for="check" id="label">
+            <input type="checkbox" id="check" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
         </button>
-        <div
-          class="offcanvas offcanvas-top h-100 text-bg-dark align-items-sm-center flex-sm-grow-0 me-sm-2 me-lg-5 mt-4"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-body me-lg-5">
-            <ul class="navbar-nav me-sm-5" id="page-links">
-              <li class="nav-item pe-4">
-                <a class="nav-link p-0" href="#skills">SKILLS</a>
-              </li>
-              <li class="nav-item pe-4">
-                <a class="nav-link p-0" href="#portfolio">PORTFOLIO</a>
-              </li>
-              <li class="nav-item pe-4">
-                <a class="nav-link p-0" href="#services">services</a>
-              </li>
-              <li class="nav-item pe-4">
-                <a class="nav-link p-0" href="#contacts">CONTACTS</a>
-              </li>
-            </ul>
-            <hr class="mt-5" />
-            <div class="phone_and_mail d-sm-none p-3">
-              <a href="tel: +380 950 237 867">+380 950 237 867</a>
-              <p>freelancewb2022@gmail.com</p>
+        <div class="canvas">
+          <div class="canvas-body">
+            <div class="">
+              <ul class="navbar-nav" id="page-links">
+                <li class="nav-item pe-4">
+                  <a class="nav-link p-0" href="#skills">SKILLS</a>
+                </li>
+                <li class="nav-item pe-4">
+                  <a class="nav-link p-0" href="#portfolio">PORTFOLIO</a>
+                </li>
+                <li class="nav-item pe-4">
+                  <a class="nav-link p-0" href="#services">services</a>
+                </li>
+                <li class="nav-item pe-4">
+                  <a class="nav-link p-0" href="#contacts">CONTACTS</a>
+                </li>
+              </ul>
+              <div class="phone_and_mail d-sm-none p-3">
+                <a href="tel: +380 950 237 867">+380 950 237 867</a>
+                <p>freelancewb2022@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="languages d-none d-md-block text-light">
+          <span>UA</span>
+          <span>|</span>
+          <span>ENG</span>
+        </div>
       </div>
-    </nav>
+    </nav> -->
+
     <div class="main-header">
-      <h1>FULL STACK DEVELOPERS</h1>
+      <h1>Global Change Developers</h1>
       <div class="container-fluid arrow-container">
         <div class="d-flex justify-content-center">
           <a href="#main"
-            ><img src="images/arrow-down.png" alt="" class="img-fluid"
+            ><img src="images/arrow-down.png" alt="" class="img-fluid arrow"
           /></a>
         </div>
       </div>
     </div>
     <main class="pt-5 pb-4" id="main">
-      <div class="container-fluid mt-5">
+      <!-- Skills -->
+      <div class="container-fluid mt-5 ps-5 pe-5">
         <div class="pt-3 mb-5"></div>
-        <div class="container-sm" id="skills">
-          <h2 class="">Skills</h2>
+        <div class="container-fluid d-lg-flex flex-wrap" id="skills">
+          <h5 class="">Skills</h5>
+          <p class="col-lg-7">
+            By our skills you can understand if we can help you
+          </p>
           <div
-            class="container-fluid p-0 mt-4 d-flex flex-column gap-3 gap-lg-4 flex-sm-row flex-wrap"
+            class="container-fluid p-0 mt-4 d-flex flex-column gap-4 flex-sm-row flex-wrap"
           >
-            <div class="skill-block col-12 col-md-4">
-              <p class="m-0">FIGMA</p>
-              <img src="images/figma.svg" alt="" class="img-fluid" />
-              <span class="">DESIgN</span>
-            </div>
-            <div class="skill-block col-12">
-              <p class="m-0">Photoshop</p>
-              <img src="images/adobe-ph.svg" alt="" class="img-fluid" />
-              <span class="">DESIgN</span>
-            </div>
-            <div class="skill-block col-12">
-              <p class="m-0">css</p>
-              <img src="images/css.svg" alt="" class="img-fluid" />
-              <span class="">STYLE</span>
-            </div>
-            <div class="skill-block col-12">
-              <p class="m-0">HTML</p>
-              <img src="images/html.svg" alt="" class="img-fluid" />
-              <span class="">FRONT-end</span>
-            </div>
-            <div class="skill-block col-12">
-              <p class="m-0">python</p>
-              <img src="images/python.svg" alt="" class="img-fluid" />
-              <span class="">SCRIPTS</span>
-            </div>
-            <div class="skill-block col-12">
-              <p class="m-0">java script</p>
-              <img src="images/js.svg" alt="" class="img-fluid" />
-              <span class="">SCRIPTS</span>
-            </div>
-            <div class="skill-block col-12">
-              <p class="m-0">BOOTSTRAP</p>
-              <img src="images/b5.svg" alt="" class="img-fluid" />
-              <span class="">FRAMEWORK</span>
-            </div>
-            <div class="skill-block col-12">
-              <p class="m-0">DJANGO</p>
-              <img src="images/django.svg" alt="" class="img-fluid" />
-              <span class="">FRAMEWORK</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-sm mt-5">
-        <div class="pt-5 mb-5"></div>
-        <div class="container-sm" id="portfolio">
-          <h2 class="">Recent Projects</h2>
-          <div
-            class="containe-fluid p-0 mt-4 d-flex gap-1 gap-lg-4 justify-content-around justify-content-lg-center"
-          >
-            <span class="active">Everything</span>
-            <span class="">Lending</span>
-            <span class="">Design</span>
-          </div>
-        </div>
-        <div class="container-fluid mt-5 p-sm-0">
-          <div class="d-flex flex-column flex-wrap flex-sm-row portfolio">
-            <div class="portfolio-item col-12 col-lg-7">
-              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
-              <span class="site-title">corporate site</span>
-              <img src="images/dr.svg" alt="" class="site-logo img-fluid" />
-              <h3>Clinic Rehabilitation</h3>
-              <p>Клиника по реабилитации человека</p>
-              <div class="show-project">
-                <span>Подивитись проект</span>
-                <img src="images/slides-arrow.svg" alt="" />
-              </div>
-            </div>
-            <div class="portfolio-item col-12 col-lg-5">
-              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
-              <span class="site-title">corporate site</span>
-              <img src="images/dr.svg" alt="" class="site-logo img-fluid" />
-              <h3>Clinic Website</h3>
-              <p>Клиника по реабилитации человека</p>
-              <div class="show-project">
-                <span>Подивитись проект</span>
-                <img src="images/slides-arrow.svg" alt="" />
-              </div>
-            </div>
-            <div class="portfolio-item col-12 col-lg-5">
-              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
-              <span class="site-title">corporate site</span>
-              <img src="images/dr.svg" alt="" class="site-logo img-fluid" />
-              <h3>Clinic Website</h3>
-              <p>Клиника по реабилитации человека</p>
-              <div class="show-project">
-                <span>Подивитись проект</span>
-                <img src="images/slides-arrow.svg" alt="" />
-              </div>
-            </div>
-            <div class="portfolio-item col-12 col-lg-7">
-              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
-              <span class="site-title">corporate site</span>
-              <img src="images/dr.svg" alt="" class="site-logo img-fluid" />
-              <h3>Clinic Website</h3>
-              <p>Клиника по реабилитации человека</p>
-              <div class="show-project">
-                <span>Подивитись проект</span>
-                <img src="images/slides-arrow.svg" alt="" />
-              </div>
-            </div>
-            <div class="portfolio-item col-12 col-lg-7">
-              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
-              <span class="site-title">corporate site</span>
-              <img src="images/dr.svg" alt="" class="site-logo img-fluid" />
-              <h3>Clinic Rehabilitation</h3>
-              <p>Клиника по реабилитации человека</p>
-              <div class="show-project">
-                <span>Подивитись проект</span>
-                <img src="images/slides-arrow.svg" alt="" />
-              </div>
-            </div>
-            <div class="portfolio-item col-12 col-lg-5">
-              <img src="images/portfolio-1.png" alt="" class="img-fluid" />
-              <span class="site-title">corporate site</span>
-              <img src="images/dr.svg" alt="" class="site-logo img-fluid" />
-              <h3>Clinic Website</h3>
-              <p>Клиника по реабилитации человека</p>
-              <div class="show-project">
-                <span>Подивитись проект</span>
-                <img src="images/slides-arrow.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid mt-5">
-        <div class="pt-5 mb-5 d-none d-sm-block"></div>
-        <div class="container-sm" id="services">
-          <h2 class="">Services</h2>
-          <div
-            class="d-flex flex-column gap-3 gap-lg-2 flex-sm-row flex-wrap justify-content-between"
-          >
-            <div class="service col-12 d-flex flex-column">
-              <div class="name_of_service">
-                <span>Landing Page</span>
-              </div>
-              <ul>
-                <li><span>Design</span></li>
-                <li><span>Development</span></li>
-                <li><span>Mobile version</span></li>
-                <li><span>Domain connection</span></li>
-                <li><span>Connecting hosting</span></li>
-              </ul>
-              <span>$399</span>
-            </div>
-            <div class="service col-12 d-flex flex-column">
-              <div class="name_of_service">
-                <span>Corporate site</span>
-              </div>
-              <ul>
-                <li><span>Design</span></li>
-                <li><span>Design of individual pages</span></li>
-                <li><span>Development</span></li>
-                <li><span>Mobile version </span></li>
-                <li><span>Domain connection</span></li>
-                <li><span>Connecting hosting</span></li>
-              </ul>
-              <span>$499</span>
-            </div>
-            <div class="service col-12 d-flex flex-column">
-              <div class="name_of_service">
-                <span>Internet shop</span>
-              </div>
-              <ul>
-                <li><span>Design</span></li>
-                <li><span>Design of individual pages</span></li>
-                <li><span>Development</span></li>
-                <li><span>Shopping cart function</span></li>
-                <li><span>Payment systems</span></li>
-                <li><span>Domain connection</span></li>
-                <li><span>Connecting hosting</span></li>
-              </ul>
-              <span>$599</span>
-            </div>
-            <div class="service col-12 d-flex flex-column">
-              <div class="name_of_service">
-                <span>Branding</span>
-              </div>
-              <ul>
-                <li><span>Logo</span></li>
-                <li><span>Business Cards</span></li>
-                <li><span>Design</span></li>
-                <li><span>Brandbook</span></li>
-              </ul>
-              <span>$199</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid mt-5">
-        <div class="pt-5 mb-5"></div>
-        <div class="container-sm" id="contacts">
-          <h2 class="">Drop A Line</h2>
-          <div
-            class="d-flex mt-4 flex-wrap gap-sm-5 justify-content-lg-between align-items-lg-start"
-          >
-            <form
-              class="col-12 d-flex flex-column gap-2 flex-sm-row flex-wrap justify-content-between"
-              method="post"
+            <div
+              class="group-skills col-12 d-flex flex-column flex-lg-row flex-sm-nowrap gap-3 gap-lg-0"
             >
-              <div
-                class="info col-12 d-flex justify-content-between flex-wrap gap-2 order-sm-2 flex-lg-column"
-              >
-                <label for="name" class="label col-12">
-                  <input
-                    class="input"
-                    id="name"
-                    type="text"
-                    name="name"
-                    placeholder="Name"
-                  />
-                </label>
-                <label for="name" class="label col-12">
-                  <input
-                    class="input"
-                    id="name"
-                    type="text"
-                    name="name"
-                    placeholder="Email"
-                  />
-                </label>
+              <div class="col-12 col-lg-5 d-flex">
+                <div draggable="true" class="skill-block col-12 col-lg-7">
+                  <p class="m-0">FIGMA</p>
+                  <img src="images/figma.svg" alt="" class="img-fluid" />
+                  <span class="">DESIgN</span>
+                </div>
               </div>
-              <textarea
-                class="textarea col-12 order-sm-3"
-                placeholder="Tell us what do you want"
-              ></textarea>
               <div
-                class="d-flex align-items-center privacy gap-2 order-sm-5 col-sm-10 col-md-4 col-lg-5 ps-lg-2"
+                class="col-12 col-lg-7 d-flex gap-4 flex-wrap flex-lg-nowrap secondary-skill-block"
               >
-                <input type="checkbox" name="" id="" />
-                <p class="m-0">
-                  I agree with the <a href=""><span>Privary Policy</span></a>
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">Photoshop</p>
+                  <img src="images/adobe-ph.svg" alt="" class="img-fluid" />
+                  <span class="">DESIgN</span>
+                </div>
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">css</p>
+                  <img src="images/css.svg" alt="" class="img-fluid" />
+                  <span class="">STYLE</span>
+                </div>
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">HTML</p>
+                  <img src="images/html.svg" alt="" class="img-fluid" />
+                  <span class="">FRONT-end</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group-skills col-12 d-flex flex-column flex-lg-row flex-sm-nowrap gap-3 gap-lg-0"
+            >
+              <div class="col-12 col-lg-5 d-flex">
+                <div draggable="true" class="skill-block col-12 col-lg-7">
+                  <p class="m-0">HTML</p>
+                  <img src="images/html.svg" alt="" class="img-fluid" />
+                  <span class="">FRONT-end</span>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-7 d-flex gap-4 flex-wrap justify-content-md-between flex-lg-nowrap secondary-skill-block"
+              >
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">python</p>
+                  <img src="images/python.svg" alt="" class="img-fluid" />
+                  <span class="">SCRIPTS</span>
+                </div>
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">FIGMA</p>
+                  <img src="images/figma.svg" alt="" class="img-fluid" />
+                  <span class="">DESIgN</span>
+                </div>
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">FIGMA</p>
+                  <img src="images/figma.svg" alt="" class="img-fluid" />
+                  <span class="">DESIgN</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group-skills col-12 d-flex flex-column flex-lg-row flex-sm-nowrap gap-3 gap-lg-0"
+            >
+              <div class="col-12 col-lg-5 d-flex">
+                <div draggable="true" class="skill-block col-12 col-lg-7">
+                  <p class="m-0">python</p>
+                  <img src="images/python.svg" alt="" class="img-fluid" />
+                  <span class="">SCRIPTS</span>
+                </div>
+              </div>
+              <div
+                class="col-12 col-lg-7 d-flex gap-4 flex-wrap justify-content-md-between flex-lg-nowrap secondary-skill-block"
+              >
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">java script</p>
+                  <img src="images/js.svg" alt="" class="img-fluid" />
+                  <span class="">SCRIPTS</span>
+                </div>
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">BOOTSTRAP</p>
+                  <img src="images/b5.svg" alt="" class="img-fluid" />
+                  <span class="">FRAMEWORK</span>
+                </div>
+                <div draggable="true" class="skill-block col-12 col-lg-4">
+                  <p class="m-0">DJANGO</p>
+                  <img src="images/django.svg" alt="" class="img-fluid" />
+                  <span class="">FRAMEWORK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio -->
+      <div class="container-fluid mt-5 ps-5 pe-5">
+        <div class="pt-5 mb-5"></div>
+        <div class="container-fluid d-lg-flex flex-wrap" id="portfolio">
+          <h5>OUR WORKS</h5>
+          <p class="col-lg-7">
+            From small local start-ups to large international organizations
+          </p>
+          <div class="slider"></div>
+          <!-- Add slider here -->
+        </div>
+      </div>
+      <!-- Services -->
+      <div class="container-fluid mt-5 ps-5 pe-5">
+        <div class="pt-5 mb-5 d-none d-sm-block"></div>
+        <div class="container-fluid d-lg-flex flex-wrap" id="services">
+          <h5>Services</h5>
+          <p class="col-lg-7">
+            We create a system to guide and manage all your expressions
+          </p>
+          <div
+            class="d-flex flex-wrap col-lg-7 ms-auto flex-lg-row flex-lg-nowrap"
+          >
+            <div
+              class="service d-flex w-100 mt-5 flex-lg-column gap-lg-5 ps-lg-3"
+            >
+              <div class="col-6 col-lg-11 order-lg-2">
+                <h4>WEBSITE</h4>
+                <p class="mb-lg-0">
+                  To identify, crystallize and adress your best potential - this
+                  is how brands are made
                 </p>
               </div>
-              <div class="d-none d-sm-block col-md-7 col-lg-6 order-sm-4">
-                <div class="col-12 d-none icons d-sm-flex gap-4 mt-2">
-                  <a href="#"
-                    ><img src="images/insta.svg" alt="" class="img-fluid"
-                  /></a>
-                  <a href="#"
-                    ><img src="images/telegram.svg" alt="" class="img-fluid"
-                  /></a>
-                  <a href="#"
-                    ><img src="images/behance.svg" alt="" class="img-fluid"
-                  /></a>
-                  <a href="#"
-                    ><img src="images/github.svg" alt="" class="img-fluid"
-                  /></a>
-                </div>
+              <div
+                class="col-6 d-flex flex-column ps-4 ps-lg-0 order-lg-1 col-lg-12"
+              >
+                <span>WEB DESIGN</span>
+                <span>WEB DEVELOPMENT</span>
+                <span>ADAPTIBILITY</span>
               </div>
-              <div class="d-none d-sm-block col-md-7 col-lg-6 order-sm-5"></div>
-              <div class="mt-2 col-sm-4 col-md-4 col-lg-5 ps-lg-2 order-sm-5">
-                <button class="btn m-lg-0">SEND MESSAGE</button>
+            </div>
+            <div
+              class="service d-flex w-100 mt-5 flex-lg-column gap-lg-5 ps-lg-3"
+            >
+              <div class="col-6 col-lg-11 order-lg-2">
+                <h4>WEBSITE</h4>
+                <p class="mb-lg-0">
+                  To identify, crystallize and adress your best potential - this
+                  is how brands are made
+                </p>
               </div>
               <div
-                class="col-12 d-flex flex-column contact-info order-sm-1 flex-sm-row gap-2 col-lg-3 flex-lg-column"
+                class="col-6 d-flex flex-column ps-4 ps-lg-0 order-lg-1 col-lg-12"
               >
-                <div
-                  class="col-12 col-sm-6 d-flex flex-column pe-2 col-lg-12 mt-2 mt-sm-0"
-                >
-                  <span>Phone</span>
-                  <p>+380 95 02 37 867</p>
-                </div>
-                <div class="col-12 col-sm-6 d-flex flex-column pe-2 col-lg-12">
-                  <span>Email</span>
-                  <p>freelancewb2022@gmail.com</p>
-                </div>
+                <span>WEB DESIGN</span>
+                <span>WEB DEVELOPMENT</span>
+                <span>ADAPTIBILITY</span>
               </div>
-            </form>
-            <div class="col-12 d-sm-none icons d-flex gap-3 mt-2">
-              <a href="#"
-                ><img src="images/insta.svg" alt="" class="img-fluid"
-              /></a>
-              <a href="#"
-                ><img src="images/telegram.svg" alt="" class="img-fluid"
-              /></a>
-              <a href="#"
-                ><img src="images/behance.svg" alt="" class="img-fluid"
-              /></a>
-              <a href="#"
-                ><img src="images/github.svg" alt="" class="img-fluid"
-              /></a>
+            </div>
+            <div
+              class="service d-flex w-100 mt-5 flex-lg-column gap-lg-5 ps-lg-3"
+            >
+              <div class="col-6 col-lg-11 order-lg-2">
+                <h4>WEBSITE</h4>
+                <p class="mb-lg-0">
+                  To identify, crystallize and adress your best potential - this
+                  is how brands are made
+                </p>
+              </div>
+              <div
+                class="col-6 d-flex flex-column ps-4 ps-lg-0 order-lg-1 col-lg-12"
+              >
+                <span>WEB DESIGN</span>
+                <span>WEB DEVELOPMENT</span>
+                <span>ADAPTIBILITY</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Form -->
+      <div class="container-fluid mt-5 ps-5 pe-5">
+        <div class="pt-5 mb-5"></div>
+        <div class="container-fluid d-lg-flex flex-wrap" id="formTelegram">
+          <h5>MESSAGE</h5>
+          <p>Want to create <br />a unique project ?</p>
+          <div class="d-lg-flex flex-wrap w-100">
+            <div class="contacts col-lg-5 d-flex gap-4 flex-column mt-3">
+              <div class="d-none d-lg-flex col-lg-12 flex-column gap-1">
+                <span>Phone</span>
+                <a href="tel:+380950237867" class="text-decoration-none"
+                  >+38 095 023 78 67</a
+                >
+              </div>
+              <div class="d-none d-lg-flex col-lg-12 flex-column gap-1">
+                <span>Email</span>
+                <p>global.change.dev@gmail.com</p>
+              </div>
+            </div>
+            <div class="type-of-help col-lg-6">
+              <p>Your project about</p>
+              <form action="#" method="get" class="form col-lg-9">
+                <div class="type mt-3">
+                  <span>UI/UX</span>
+                  <span>Website</span>
+                  <span>Handling</span>
+                  <span>Development</span>
+                </div>
+                <div
+                  class="d-flex flex-column flex-wrap flex-sm-row justify-content-sm-between gap-3 mt-3 mb-4"
+                >
+                  <label for="" class="col-12 col-sm-5 col-lg-3">
+                    <input type="text" class="w-100" placeholder="Ім'я" />
+                  </label>
+                  <label for="" class="col-12 col-sm-6 col-lg-3">
+                    <input type="text" class="w-100" placeholder="Email" />
+                  </label>
+                  <label for="" class="col-12 col-sm-5 col-lg-3">
+                    <input
+                      type="text"
+                      class="w-100"
+                      placeholder="Номер телефону"
+                    />
+                  </label>
+                  <label for="" class="col-12 col-sm-6 col-lg-12">
+                    <input
+                      type="text"
+                      class="w-100"
+                      placeholder="Ваше повідомлення"
+                    />
+                  </label>
+                </div>
+                <div
+                  class="col-sm-5 col-md-5 col-lg-5 text-center p-3 rounded-2 btnTelegram"
+                >
+                  <a href="#" role="button">
+                    <span>Відправити</span>
+                  </a>
+                </div>
+                <p class="mt-3 w-75 text-muted privacy">
+                  By pressing button you agree for your information to be
+                  processed according to our
+                  <a
+                    style="color: var(--help--type--color--active)"
+                    class="text-decoration-none"
+                    href="privacy.html"
+                    >privacy policy.</a
+                  >
+                </p>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </main>
+    <!-- Footer -->
+    <!-- Футер пока что не сделан, по возможности можно сделать!!! -->
     <footer class="d-none d-sm-block">
-      <div class="container-fluid">
+      <!-- <div class="container-fluid">
         <div class="container-sm pb-3 footer">
           <hr />
           <img src="./images/logo.svg" class="img-fluid footer-logo" />
@@ -445,7 +365,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
     <!-- jQuery и js файлы -->
     <script
