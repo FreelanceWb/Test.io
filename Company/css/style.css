@@ -169,7 +169,7 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
 
 .skill-block {
   border: 1px solid var(--skill--border);
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
   padding: 20px;
   text-transform: uppercase;
