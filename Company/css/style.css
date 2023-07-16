@@ -367,13 +367,36 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
   font-weight: 500;
 }
 
+.footer-hr {
+  background-color: var(--help--type--color--active);
+  height: 2px;
+}
+
 /* Конец формы для заказов */
 /* Начало футера */
 footer {
-  background-color: var(--main--color);
-  height: 220px;
+  height: fit-content;
 }
 
-.footer {
-  position: relative;
+.footer-links > a {
+  text-decoration: none;
+  width: calc(50% - 0.5rem);
+}
+
+.footer-links > a > li {
+  list-style: none;
+
+  color: #ffffff;
+}
+
+.footer-links :nth-child(5) > li,
+.footer-links :nth-child(6) > li {
+  margin-top: 10px;
+  color: var(--headers--color);
+}
+
+.footer-info span,
+.footer-info span > a {
+  text-decoration: none;
+  color: #ffffff;
 }
