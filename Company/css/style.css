@@ -1,8 +1,6 @@
 :root {
-  --links--underline: #88bab1;
   --section--colors: #ebe5e5;
   --main--color: #0f0f0f;
-  --gray--p: #e6e6e6;
   --main--h2--color: #e5e5e5;
   --h2--before--color: #54b435;
   --skill--border: #2c2c2c;
@@ -11,6 +9,7 @@
   --help--type--color: #b2b1b1;
   --help--type--color--active: #2094ff;
   --headers--color: #939393;
+  --burger--menu--bgc: #163253;
 }
 
 * {
@@ -18,7 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Code", monospace;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 html,
@@ -28,24 +27,40 @@ body {
   cursor: url(../images/cursor.png), auto;
   background-color: var(--main--color);
   overflow-x: hidden;
+  z-index: 1;
 }
 
-body.show {
+body.lock {
   overflow: hidden;
 }
 
 /* Начало бургера */
 
 .canvas {
-  position: fixed;
-  top: -100%;
-  left: 0;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  height: 100vh;
+  transition: all 0.6s ease 0.5s;
+  z-index: 2;
+}
+
+.canvas-body {
   width: 100%;
   height: 100%;
-  transition: all 0.8s ease 0.5s;
+  background-color: var(--burger--menu--bgc);
 }
 .canvas.show {
-  top: 0;
+  right: 0;
+}
+
+.burger-button {
+  z-index: 3;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: all 0.6s ease 0.5s;
 }
 
 #label {
@@ -94,11 +109,12 @@ body.show {
   transform: translate(23px, -7px) rotatez(45deg);
 }
 
+.logo {
+  z-index: 2;
+}
+
 /* Конец бургера */
 /* Начало первого слайда */
-.navbar-toggler {
-  border: none;
-}
 
 #page-links {
   text-transform: uppercase;
@@ -203,11 +219,6 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
 }
 
 /* Конец слайда скиллов */
-.site-logo,
-.site-title {
-  display: none;
-}
-
 .portfolio-item h3 {
   color: #ebe5e5;
   font-size: calc(1.1rem + 0.4vw);
@@ -385,7 +396,6 @@ footer {
 
 .footer-links > a > li {
   list-style: none;
-
   color: #ffffff;
 }
 
