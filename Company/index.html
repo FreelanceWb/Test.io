@@ -22,15 +22,32 @@
     <link rel="stylesheet" href="css/media.css" />
   </head>
 
-  <body>
-    <nav class="navbar position-absolute top-0 start-0 w-100 pe-sm-5 ps-sm-5">
+  <body id="body">
+    <nav class="navbar position-fixed top-0 start-0 w-100 pe-md-5 ps-md-5">
       <div class="container-fluid d-flex justify-content-between">
         <div class="col-3 logo">
-          <a href="#" class="d-block">
+          <a href="#body" class="d-block">
             <img src="images/logo.png" alt="" class="img-fluid" />
           </a>
         </div>
-        <button class="burger-button p-0 d-sm-none" type="button">
+        <ul
+          class="navbar-nav col-6 links flex-row justify-content-center d-none d-lg-flex"
+          id="page-links"
+        >
+          <li class="nav-item pe-sm-5">
+            <a class="nav-link ps-3 p-sm-0" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item pe-sm-5">
+            <a class="nav-link ps-3 p-sm-0" href="#portfolio">PORTFOLIO</a>
+          </li>
+          <li class="nav-item pe-sm-5">
+            <a class="nav-link ps-3 p-sm-0" href="#services">services</a>
+          </li>
+          <li class="nav-item pe-sm-5">
+            <a class="nav-link ps-3 p-sm-0" href="#formTelegram">CONTACTS</a>
+          </li>
+        </ul>
+        <button class="burger-button p-0 d-lg-none">
           <label for="check" id="label">
             <input type="checkbox" id="check" />
             <span></span>
@@ -38,28 +55,32 @@
             <span></span>
           </label>
         </button>
-        <div class="canvas" id="canvas">
+        <div class="canvas d-lg-none" id="canvas">
           <div class="canvas-body pt-5">
             <div class="d-flex flex-column justify-content-around h-100">
               <ul class="navbar-nav" id="page-links">
-                <li class="nav-item pe-sm-4">
-                  <a class="nav-link ps-3 p-sm-0" href="#skills">SKILLS</a>
+                <li class="nav-item pe-lg-4">
+                  <a class="nav-link ps-3 ps-md-4 p-lg-0" href="#skills"
+                    >SKILLS</a
+                  >
                 </li>
-                <li class="nav-item pe-sm-4">
-                  <a class="nav-link ps-3 p-sm-0" href="#portfolio"
+                <li class="nav-item pe-lg-4">
+                  <a class="nav-link ps-3 ps-md-4 p-lg-0" href="#portfolio"
                     >PORTFOLIO</a
                   >
                 </li>
-                <li class="nav-item pe-sm-4">
-                  <a class="nav-link ps-3 p-sm-0" href="#services">services</a>
+                <li class="nav-item pe-lg-4">
+                  <a class="nav-link ps-3 ps-md-4 p-lg-0" href="#services"
+                    >services</a
+                  >
                 </li>
-                <li class="nav-item pe-sm-4">
-                  <a class="nav-link ps-3 p-sm-0" href="#formTelegram"
+                <li class="nav-item pe-lg-4">
+                  <a class="nav-link ps-3 ps-md-4 p-lg-0" href="#formTelegram"
                     >CONTACTS</a
                   >
                 </li>
               </ul>
-              <div class="phone_and_mail d-sm-none p-3 footer-info">
+              <div class="phone_and_mail d-lg-none p-3 p-md-4 footer-info">
                 <span
                   ><a href="tel: +380 950 237 867">+380 950 237 867</a></span
                 >
@@ -78,14 +99,13 @@
             </div>
           </div>
         </div>
-        <div class="languages d-none d-md-block text-light">
+        <div class="languages d-none d-lg-block text-light col-3 text-end">
           <span>UA</span>
           <span>|</span>
           <span>ENG</span>
         </div>
       </div>
     </nav>
-
     <div class="main-header">
       <h1>Global Change Developers</h1>
       <div class="container-fluid arrow-container">
@@ -246,36 +266,35 @@
               class="service d-flex w-100 mt-5 flex-lg-column gap-lg-5 ps-lg-3"
             >
               <div class="col-6 col-lg-11 order-lg-2">
-                <h4>WEBSITE</h4>
+                <h4>DESIGN</h4>
                 <p class="mb-lg-0">
-                  To identify, crystallize and adress your best potential - this
-                  is how brands are made
+                  How do you look, feel, sound and taste? To be recognized is to
+                  express
                 </p>
               </div>
               <div
                 class="col-6 d-flex flex-column ps-4 ps-lg-0 order-lg-1 col-lg-12"
               >
-                <span>WEB DESIGN</span>
-                <span>WEB DEVELOPMENT</span>
-                <span>ADAPTIBILITY</span>
+                <span>UI/UX DESIGN</span>
+                <span>BRAND STYLE</span>
+                <span>NAMING</span>
               </div>
             </div>
             <div
               class="service d-flex w-100 mt-5 flex-lg-column gap-lg-5 ps-lg-3"
             >
               <div class="col-6 col-lg-11 order-lg-2">
-                <h4>WEBSITE</h4>
+                <h4>DEVELOPMENT</h4>
                 <p class="mb-lg-0">
-                  To identify, crystallize and adress your best potential - this
-                  is how brands are made
+                  How and where is your brand experienced by your customers
                 </p>
               </div>
               <div
                 class="col-6 d-flex flex-column ps-4 ps-lg-0 order-lg-1 col-lg-12"
               >
-                <span>WEB DESIGN</span>
-                <span>WEB DEVELOPMENT</span>
-                <span>ADAPTIBILITY</span>
+                <span>TELEGRAM BOTS</span>
+                <span>REFACTORING</span>
+                <span>API INTEGRATION</span>
               </div>
             </div>
           </div>
@@ -363,7 +382,7 @@
         <div class="footer-image col-3">
           <a href="#"><img src="./images/logo.png" class="img-fluid" /></a>
         </div>
-        <div class="footer-menu col-sm-6 col-md-3 col-lg-4">
+        <div class="footer-menu col-sm-6 col-md-3 col-lg-5">
           <ul
             class="footer-links w-100 p-0 m-0 d-flex justify-content-center flex-wrap gap-2"
           >
@@ -376,7 +395,7 @@
           </ul>
         </div>
         <div
-          class="footer-info col-3 d-flex flex-column gap-2 col-md-4 col-lg-2"
+          class="footer-info col-3 d-flex flex-column gap-2 col-md-4 col-lg-4"
         >
           <span class="text-end"
             ><a href="tel:+380 95 02 37 876">+380 95 02 37 876</a></span
