@@ -15,7 +15,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Code", monospace;
+  font-family: "Gotham", sans-serif;
   scroll-behavior: smooth;
   /* outline: none; */
 }
@@ -201,12 +201,9 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
 }
 
 .skill-block p {
-  position: relative;
-  font-weight: 300;
   line-height: 24px;
   font-size: calc(1rem + 0.2vw);
   color: var(--main--h2--color);
-  width: fit-content;
 }
 
 .skill-block img {

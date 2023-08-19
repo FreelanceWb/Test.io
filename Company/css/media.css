@@ -31,12 +31,14 @@
   }
 }
 
-/* @media (min-width: 768px) {
-
+@media (min-width: 768px) {
+  #skills .skill-block {
+    width: calc(32% - 0.5rem);
+  }
 }
 
 @media (max-width: 992px) {
-} */
+}
 
 @media (min-width: 992px) {
   .service {
@@ -48,9 +50,5 @@
   #portfolio > h5,
   #skills > h5 {
     width: 41.66666667%;
-  }
-
-  .secondary-skill-block > .skill-block {
-    width: calc(32.5% - 0.5rem);
   }
 }
