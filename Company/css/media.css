@@ -18,22 +18,9 @@
   }
 }
 
-@media (min-width: 576px) {
-  /* .service {
-    width: calc(50% - 0.5rem);
-  } */
-
-  .skill-block img {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 50px;
-  }
-}
-
 @media (min-width: 768px) {
   #skills .skill-block {
-    width: calc(32% - 0.5rem);
+    width: 273px;
   }
 }
 

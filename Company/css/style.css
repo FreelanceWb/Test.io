@@ -127,9 +127,20 @@ body.lock {
   text-transform: uppercase;
 }
 
-#page-links li a {
+#page-links li a,
+.languages {
   color: var(--section--colors);
   list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.languages > span {
+  opacity: 0.5;
+}
+
+.languages > span.active {
+  opacity: 1;
 }
 
 #page-links li a:hover,
@@ -150,11 +161,10 @@ body.lock {
   flex: 1 1 0;
   display: flex;
   align-items: center;
-  font-size: calc(1.8rem + 4.3vw);
+  font-size: calc(2.5rem + 4.5vw);
   color: #ece9e9;
   text-align: center;
-  max-width: 1095px;
-  line-height: 120%;
+  font-weight: 700;
 }
 
 .arrow-container img {
@@ -171,13 +181,13 @@ body.lock {
 }
 
 .arrow-container {
-  width: 70px;
+  width: 80px;
 }
 
 .arrow {
-  border: 1.5px solid #0277bd;
-  border-radius: 20px;
-  padding: 15px 0px;
+  border: 2px solid #0277bd;
+  border-radius: 30px;
+  padding: 20px 0px;
 }
 
 /* Конец первого слайда */
@@ -188,6 +198,7 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.5px;
+  font-size: calc(0.9rem + 0.1vw);
 }
 
 .skill-block {
@@ -196,20 +207,22 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
   position: relative;
   padding: 20px;
   text-transform: uppercase;
-  height: 175px;
+  height: 190px;
   cursor: move;
 }
 
 .skill-block p {
   line-height: 24px;
-  font-size: calc(1rem + 0.2vw);
+  font-size: 20px;
   color: var(--main--h2--color);
+  font-weight: 400;
 }
 
 .skill-block img {
   position: absolute;
   right: 15px;
   top: 15px;
+  width: 60px;
 }
 
 .skill-block span {
@@ -217,9 +230,9 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
   left: 20px;
   bottom: 20px;
   color: var(--skill--span);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* Конец слайда скиллов */
@@ -293,10 +306,10 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
 #portfolio > p,
 #skills > p {
   color: #faf7f7;
-  font-size: calc(1.3rem + 0.2vw);
+  font-size: calc(1rem + 1vw);
   max-width: 550px;
   word-wrap: break-word;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .type {
