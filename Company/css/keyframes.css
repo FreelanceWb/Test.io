@@ -16,16 +16,7 @@
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes moveBubble {
+/* @keyframes moveBubble {
   0% {
     transform: translate(0px, 0px);
   }
@@ -35,5 +26,14 @@
   }
   100% {
     transform: translate(0px, 0px);
+  }
+} */
+
+@keyframes animate_text {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
   }
 }

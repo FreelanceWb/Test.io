@@ -77,3 +77,37 @@ items.forEach(function (item) {
   item.addEventListener("dragend", handleDragEnd);
   item.addEventListener("drop", handleDrop);
 });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  autoplay: {
+    delay: 0,
+  },
+  speed: 2000, //add
+  slidesPerView: 1, //add
+  spaceBetween: 10,
+  // forceLoop: true,
+  breakpoints: {
+    // when window width is >= 320px
+    425: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    1024: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    1440: {
+      slidesPerView: 5,
+    },
+  },
+});
+
+swiper.el.addEventListener("mouseover", function () {
+  //add
+  swiper.autoplay.stop(); //add
+}); //add
+swiper.el.addEventListener("mouseleave", function () {
+  //add
+  swiper.autoplay.start(); //add
+});

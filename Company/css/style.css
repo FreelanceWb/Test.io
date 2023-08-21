@@ -236,32 +236,58 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
 }
 
 /* Конец слайда скиллов */
-.portfolio-item h3 {
-  color: #ebe5e5;
-  font-size: calc(1.1rem + 0.4vw);
-  margin-top: 20px;
-  margin-bottom: 5px;
+/* Начало слайдера */
+
+.swiper {
+  height: 350px;
 }
 
-.portfolio-item p {
-  color: #8a8a8a;
-  font-size: calc(0.8rem + 0.4vw);
-  max-height: 170px;
+.myswiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.swiper,
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+/* Конец слайдера */
+
+/* Бегущая строка */
+
+.scrolling_text {
+  width: 100%;
   overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.show-project {
-  font-size: calc(0.9rem + 0.4vw);
-  text-transform: uppercase;
-  color: #ebe5e5;
   display: flex;
-  margin-bottom: 20px;
+  white-space: nowrap;
 }
 
-.show-project img {
-  margin-left: 10px;
+.text {
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3a5988;
+  /* animation: animate_text 30s linear infinite; The animation property */
+  position: relative;
 }
+
+.text > span::after {
+  content: "+";
+  width: 5px;
+  height: 5px;
+  background-color: #3a5988;
+  border-radius: 10px;
+  right: 15px;
+  top: 10px;
+  position: absolute;
+}
+
+.text span {
+  margin: 0 40px;
+}
+/* Конец бегущей строки */
 
 /*  Начало сервисов */
 .service {
