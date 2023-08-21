@@ -265,23 +265,24 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
 }
 
 .text {
-  font-size: 80px;
+  font-size: calc(3rem + 1vw);
   font-weight: 700;
+  line-height: 50px;
   text-transform: uppercase;
   color: #3a5988;
-  /* animation: animate_text 30s linear infinite; The animation property */
+  animation: animate_text 40s linear infinite; /*The animation property*/
   position: relative;
 }
 
 .text > span::after {
-  content: "+";
-  width: 5px;
-  height: 5px;
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   background-color: #3a5988;
-  border-radius: 10px;
-  right: 15px;
-  top: 10px;
+  border-radius: 50%;
   position: absolute;
+  transform: translate(35px, 10px);
 }
 
 .text span {

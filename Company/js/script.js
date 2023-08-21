@@ -83,7 +83,7 @@ const swiper = new Swiper(".swiper", {
   autoplay: {
     delay: 0,
   },
-  speed: 2000, //add
+  speed: 3000, //add
   slidesPerView: 1, //add
   spaceBetween: 10,
   // forceLoop: true,
