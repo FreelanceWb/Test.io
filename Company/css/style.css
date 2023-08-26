@@ -124,7 +124,7 @@ body.lock {
 /* Начало первого слайда */
 
 #page-links {
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 #page-links li a,
@@ -132,7 +132,7 @@ body.lock {
   color: var(--section--colors);
   list-style: none;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .languages > span {
@@ -354,14 +354,15 @@ main :where(#skills, #portfolio, #services, #formTelegram) h5 {
 
 .service :nth-child(1) > p {
   font-size: calc(0.7rem + 0.2vw);
-  max-width: 300px;
-  line-break: strict;
+  max-width: 250px;
+  /* line-break: strict; */
 }
 
 .service :nth-child(2) > span {
   text-transform: uppercase;
   margin-bottom: 16px;
-  font-weight: 100;
+  font-weight: 400;
+  font-size: 16px;
 }
 /* Конец сервисов */
 /* Начало формы для заказов */
