@@ -80,12 +80,13 @@ items.forEach(function (item) {
 
 const swiper = new Swiper(".swiper", {
   loop: true,
-  autoplay: {
-    delay: 0,
-  },
-  speed: 3000, //add
+  // autoplay: {
+  //   delay: 0,
+  // },
+  // speed: 3000, //add
   slidesPerView: 1, //add
   spaceBetween: 10,
+  // init: false,
   // forceLoop: true,
   breakpoints: {
     // when window width is >= 320px
@@ -96,18 +97,17 @@ const swiper = new Swiper(".swiper", {
     1024: {
       slidesPerView: 3,
     },
-    // when window width is >= 640px
     1440: {
       slidesPerView: 5,
     },
   },
 });
 
-swiper.el.addEventListener("mouseover", function () {
-  //add
-  swiper.autoplay.stop(); //add
-}); //add
-swiper.el.addEventListener("mouseleave", function () {
-  //add
-  swiper.autoplay.start(); //add
-});
+// swiper.el.addEventListener("mouseover", function () {
+//   //add
+//   swiper.autoplay.stop(); //add
+// }); //add
+// swiper.el.addEventListener("mouseleave", function () {
+//   //add
+//   swiper.autoplay.start(); //add
+// });
